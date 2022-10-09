@@ -1,0 +1,1558 @@
+rainer@donkeynano46:~/projects/donkeycar$ python -V
+Python 2.7.17
+rainer@donkeynano46:~/projects/donkeycar$ python3 -V
+Python 3.6.9
+rainer@donkeynano46:~/projects/donkeycar$ python 
+Python 2.7.17 (default, Jul  1 2022, 15:56:32) 
+[GCC 7.5.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named tensorflow
+>>> import cv2
+>>> cv2.__version__
+'4.1.1'
+>>> quit()
+rainer@donkeynano46:~/projects/donkeycar$ source env/bin/activate
+bash: env/bin/activate: No such file or directory
+rainer@donkeynano46:~/projects/donkeycar$ cd
+rainer@donkeynano46:~$ source env/bin/activate
+(env) rainer@donkeynano46:~$ python -V
+Python 3.6.9
+(env) rainer@donkeynano46:~$ python
+Python 3.6.9 (default, Jun 29 2022, 11:45:57) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+2022-10-09 15:46:10.562011: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.10.2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/__init__.py", line 55, in <module>
+    from ._api.v2 import compat
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/__init__.py", line 39, in <module>
+    from . import v1
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/v1/__init__.py", line 34, in <module>
+    from . import compat
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/v1/compat/__init__.py", line 39, in <module>
+    from . import v1
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/v1/compat/v1/__init__.py", line 693, in <module>
+    from tensorflow.python.keras.api._v1 import keras
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/__init__.py", line 10, in <module>
+    from . import keras
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/keras/__init__.py", line 19, in <module>
+    from . import datasets
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/keras/datasets/__init__.py", line 14, in <module>
+    from . import imdb
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/keras/datasets/imdb/__init__.py", line 10, in <module>
+    from tensorflow.python.keras.datasets.imdb import get_word_index
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/datasets/imdb.py", line 21, in <module>
+    from tensorflow.python.keras.preprocessing.sequence import _remove_long_seq
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/preprocessing/__init__.py", line 22, in <module>
+    from tensorflow.python.keras.preprocessing import image
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/preprocessing/image.py", line 20, in <module>
+    from keras_preprocessing import image
+  File "/home/rainer/env/lib/python3.6/site-packages/keras_preprocessing/image/__init__.py", line 5, in <module>
+    from .affine_transformations import *
+  File "/home/rainer/env/lib/python3.6/site-packages/keras_preprocessing/image/affine_transformations.py", line 9, in <module>
+    from .utils import (array_to_img,
+  File "/home/rainer/env/lib/python3.6/site-packages/keras_preprocessing/image/utils.py", line 14, in <module>
+    from PIL import ImageEnhance
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/ImageEnhance.py", line 21, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/Image.py", line 52, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1131, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1112, in _legacy_get_spec
+  File "<frozen importlib._bootstrap>", line 441, in spec_from_loader
+  File "<frozen importlib._bootstrap_external>", line 544, in spec_from_file_location
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/_deprecate.py", line 1
+SyntaxError: future feature annotations is not defined
+>>> tf.__version__
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tf' is not defined
+>>> import cv2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python3.6/dist-packages/cv2/__init__.py", line 89, in <module>
+    bootstrap()
+  File "/usr/lib/python3.6/dist-packages/cv2/__init__.py", line 79, in bootstrap
+    import cv2
+ImportError: /usr/lib/aarch64-linux-gnu/libgomp.so.1: cannot allocate memory in static TLS block
+>>> cv2.__version__
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cv2' is not defined
+>>> 
+>>> quit()
+(env) rainer@donkeynano46:~$ donkey
+________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
+
+using donkey v4.3.22 ...
+Traceback (most recent call last):
+  File "/home/rainer/env/bin/donkey", line 33, in <module>
+    sys.exit(load_entry_point('donkeycar', 'console_scripts', 'donkey')())
+  File "/home/rainer/env/bin/donkey", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/home/rainer/.local/lib/python3.6/site-packages/importlib_metadata/__init__.py", line 194, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rainer/projects/donkeycar/donkeycar/__init__.py", line 26, in <module>
+    from . import utils
+  File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 22, in <module>
+    from PIL import Image
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/Image.py", line 52, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1131, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1112, in _legacy_get_spec
+  File "<frozen importlib._bootstrap>", line 441, in spec_from_loader
+  File "<frozen importlib._bootstrap_external>", line 544, in spec_from_file_location
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/_deprecate.py", line 1
+SyntaxError: future feature annotations is not defined
+(env) rainer@donkeynano46:~$ deactivate
+rainer@donkeynano46:~$ cd projects/
+rainer@donkeynano46:~/projects$ git clone https://github.com/pyenv/pyenv.git
+Cloning into 'pyenv'...
+remote: Enumerating objects: 22002, done.
+remote: Counting objects: 100% (70/70), done.
+remote: Compressing objects: 100% (49/49), done.
+remote: Total 22002 (delta 28), reused 37 (delta 17), pack-reused 21932
+Receiving objects: 100% (22002/22002), 4.42 MiB | 1.42 MiB/s, done.
+Resolving deltas: 100% (14896/14896), done.
+rainer@donkeynano46:~/projects$ cd pyenv/
+rainer@donkeynano46:~/projects/pyenv$ sudo apt-get install curl
+[sudo] password for rainer: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  curl
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 152 kB of archives.
+After this operation, 385 kB of additional disk space will be used.
+Get:1 http://ports.ubuntu.com/ubuntu-ports bionic-updates/main arm64 curl arm64 7.58.0-2ubuntu3.20 [152 kB]
+Fetched 152 kB in 0s (589 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package curl.
+(Reading database ... 182348 files and directories currently installed.)
+Preparing to unpack .../curl_7.58.0-2ubuntu3.20_arm64.deb ...
+Unpacking curl (7.58.0-2ubuntu3.20) ...
+Setting up curl (7.58.0-2ubuntu3.20) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+rainer@donkeynano46:~/projects/pyenv$ curl https://pyenv.run | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   270  100   270    0     0    248      0  0:00:01  0:00:01 --:--:--   248
+Cloning into '/home/rainer/.pyenv'...
+remote: Enumerating objects: 1002, done.
+remote: Counting objects: 100% (1002/1002), done.
+remote: Compressing objects: 100% (432/432), done.
+remote: Total 1002 (delta 580), reused 698 (delta 442), pack-reused 0
+Receiving objects: 100% (1002/1002), 493.47 KiB | 4.41 MiB/s, done.
+Resolving deltas: 100% (580/580), done.
+Cloning into '/home/rainer/.pyenv/plugins/pyenv-doctor'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 11 (delta 1), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+Cloning into '/home/rainer/.pyenv/plugins/pyenv-installer'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 16 (delta 1), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (16/16), done.
+Cloning into '/home/rainer/.pyenv/plugins/pyenv-update'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+Cloning into '/home/rainer/.pyenv/plugins/pyenv-virtualenv'...
+remote: Enumerating objects: 61, done.
+remote: Counting objects: 100% (61/61), done.
+remote: Compressing objects: 100% (54/54), done.
+remote: Total 61 (delta 11), reused 27 (delta 1), pack-reused 0
+Unpacking objects: 100% (61/61), done.
+Cloning into '/home/rainer/.pyenv/plugins/pyenv-which-ext'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+
+WARNING: seems you still have not added 'pyenv' to the load path.
+
+# Load pyenv automatically by appending
+# the following to 
+~/.bash_profile if it exists, otherwise ~/.profile (for login shells)
+and ~/.bashrc (for interactive shells) :
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Restart your shell for the changes to take effect.
+
+# Load pyenv-virtualenv automatically by adding
+# the following to ~/.bashrc:
+
+eval "$(pyenv virtualenv-init -)"
+
+rainer@donkeynano46:~/projects/pyenv$ vi ~/.bashrc
+rainer@donkeynano46:~/projects/pyenv$ . ~/.bashrc
+rainer@donkeynano46:~/projects/pyenv$ pyenv update
+Updating /home/rainer/.pyenv...
+remote: Enumerating objects: 21565, done.
+remote: Counting objects: 100% (21563/21563), done.
+remote: Compressing objects: 100% (5626/5626), done.
+remote: Total 20905 (delta 14509), reused 20490 (delta 14094), pack-reused 0
+Receiving objects: 100% (20905/20905), 3.83 MiB | 5.90 MiB/s, done.
+Resolving deltas: 100% (14509/14509), completed with 309 local objects.
+From https://github.com/pyenv/pyenv
+ * branch            master            -> FETCH_HEAD
+ * [new tag]         1.2.24            -> 1.2.24
+ * [new tag]         1.2.24.1          -> 1.2.24.1
+ * [new tag]         1.2.25            -> 1.2.25
+ * [new tag]         1.2.26            -> 1.2.26
+ * [new tag]         1.2.27            -> 1.2.27
+ * [new tag]         v0.1.0            -> v0.1.0
+ * [new tag]         v0.1.1            -> v0.1.1
+ * [new tag]         v0.1.2            -> v0.1.2
+ * [new tag]         v0.2.0            -> v0.2.0
+ * [new tag]         v0.2.1            -> v0.2.1
+ * [new tag]         v0.3.0            -> v0.3.0
+ * [new tag]         v0.4.0            -> v0.4.0
+ * [new tag]         v0.4.0-20130613   -> v0.4.0-20130613
+ * [new tag]         v0.4.0-20130726   -> v0.4.0-20130726
+ * [new tag]         v0.4.0-20131023   -> v0.4.0-20131023
+ * [new tag]         v0.4.0-20131116   -> v0.4.0-20131116
+ * [new tag]         v0.4.0-20131216   -> v0.4.0-20131216
+ * [new tag]         v0.4.0-20131217   -> v0.4.0-20131217
+ * [new tag]         v0.4.0-20140110   -> v0.4.0-20140110
+ * [new tag]         v0.4.0-20140110.1 -> v0.4.0-20140110.1
+ * [new tag]         v0.4.0-20140123   -> v0.4.0-20140123
+ * [new tag]         v0.4.0-20140211   -> v0.4.0-20140211
+ * [new tag]         v0.4.0-20140311   -> v0.4.0-20140311
+ * [new tag]         v0.4.0-20140317   -> v0.4.0-20140317
+ * [new tag]         v0.4.0-20140404   -> v0.4.0-20140404
+ * [new tag]         v0.4.0-20140516   -> v0.4.0-20140516
+ * [new tag]         v0.4.0-20140520   -> v0.4.0-20140520
+ * [new tag]         v0.4.0-20140602   -> v0.4.0-20140602
+ * [new tag]         v1.0.0            -> v1.0.0
+ * [new tag]         v1.0.1            -> v1.0.1
+ * [new tag]         v1.0.10           -> v1.0.10
+ * [new tag]         v1.0.2            -> v1.0.2
+ * [new tag]         v1.0.3            -> v1.0.3
+ * [new tag]         v1.0.4            -> v1.0.4
+ * [new tag]         v1.0.5            -> v1.0.5
+ * [new tag]         v1.0.6            -> v1.0.6
+ * [new tag]         v1.0.7            -> v1.0.7
+ * [new tag]         v1.0.8            -> v1.0.8
+ * [new tag]         v1.0.9            -> v1.0.9
+ * [new tag]         v1.1.0            -> v1.1.0
+ * [new tag]         v1.1.1            -> v1.1.1
+ * [new tag]         v1.1.2            -> v1.1.2
+ * [new tag]         v1.1.3            -> v1.1.3
+ * [new tag]         v1.1.4            -> v1.1.4
+ * [new tag]         v1.1.5            -> v1.1.5
+ * [new tag]         v1.2.0            -> v1.2.0
+ * [new tag]         v1.2.1            -> v1.2.1
+ * [new tag]         v1.2.10           -> v1.2.10
+ * [new tag]         v1.2.11           -> v1.2.11
+ * [new tag]         v1.2.12           -> v1.2.12
+ * [new tag]         v1.2.13           -> v1.2.13
+ * [new tag]         v1.2.14           -> v1.2.14
+ * [new tag]         v1.2.15           -> v1.2.15
+ * [new tag]         v1.2.16           -> v1.2.16
+ * [new tag]         v1.2.17           -> v1.2.17
+ * [new tag]         v1.2.18           -> v1.2.18
+ * [new tag]         v1.2.19           -> v1.2.19
+ * [new tag]         v1.2.2            -> v1.2.2
+ * [new tag]         v1.2.20           -> v1.2.20
+ * [new tag]         v1.2.21           -> v1.2.21
+ * [new tag]         v1.2.22           -> v1.2.22
+ * [new tag]         v1.2.23           -> v1.2.23
+ * [new tag]         v1.2.24           -> v1.2.24
+ * [new tag]         v1.2.24.1         -> v1.2.24.1
+ * [new tag]         v1.2.25           -> v1.2.25
+ * [new tag]         v1.2.26           -> v1.2.26
+ * [new tag]         v1.2.3            -> v1.2.3
+ * [new tag]         v1.2.4            -> v1.2.4
+ * [new tag]         v1.2.5            -> v1.2.5
+ * [new tag]         v1.2.6            -> v1.2.6
+ * [new tag]         v1.2.7            -> v1.2.7
+ * [new tag]         v1.2.8            -> v1.2.8
+ * [new tag]         v1.2.9            -> v1.2.9
+ * [new tag]         v2.0.0            -> v2.0.0
+ * [new tag]         v2.0.0-rc1        -> v2.0.0-rc1
+ * [new tag]         v2.0.1            -> v2.0.1
+ * [new tag]         v2.0.2            -> v2.0.2
+ * [new tag]         v2.0.3            -> v2.0.3
+ * [new tag]         v2.0.4            -> v2.0.4
+ * [new tag]         v2.0.5            -> v2.0.5
+ * [new tag]         v2.0.6            -> v2.0.6
+ * [new tag]         v2.0.7            -> v2.0.7
+ * [new tag]         v2.1.0            -> v2.1.0
+ * [new tag]         v2.2.0            -> v2.2.0
+ * [new tag]         v2.2.1            -> v2.2.1
+ * [new tag]         v2.2.2            -> v2.2.2
+ * [new tag]         v2.2.3            -> v2.2.3
+ * [new tag]         v2.2.4            -> v2.2.4
+ * [new tag]         v2.2.4-1          -> v2.2.4-1
+ * [new tag]         v2.2.5            -> v2.2.5
+ * [new tag]         v2.3.0            -> v2.3.0
+ * [new tag]         v2.3.1            -> v2.3.1
+ * [new tag]         v2.3.2            -> v2.3.2
+ * [new tag]         v2.3.3            -> v2.3.3
+ * [new tag]         v2.3.4            -> v2.3.4
+ * [new tag]         v20140614         -> v20140614
+ * [new tag]         v20140615         -> v20140615
+ * [new tag]         v20140628         -> v20140628
+ * [new tag]         v20140705         -> v20140705
+ * [new tag]         v20140825         -> v20140825
+ * [new tag]         v20140924         -> v20140924
+ * [new tag]         v20141008         -> v20141008
+ * [new tag]         v20141011         -> v20141011
+ * [new tag]         v20141012         -> v20141012
+ * [new tag]         v20141106         -> v20141106
+ * [new tag]         v20141118         -> v20141118
+ * [new tag]         v20141127         -> v20141127
+ * [new tag]         v20141211         -> v20141211
+ * [new tag]         v20150124         -> v20150124
+ * [new tag]         v20150204         -> v20150204
+ * [new tag]         v20150226         -> v20150226
+ * [new tag]         v20150326         -> v20150326
+ * [new tag]         v20150404         -> v20150404
+ * [new tag]         v20150504         -> v20150504
+ * [new tag]         v20150524         -> v20150524
+ * [new tag]         v20150601         -> v20150601
+ * [new tag]         v20150719         -> v20150719
+ * [new tag]         v20150901         -> v20150901
+ * [new tag]         v20150913         -> v20150913
+ * [new tag]         v20151006         -> v20151006
+ * [new tag]         v20151103         -> v20151103
+ * [new tag]         v20151105         -> v20151105
+ * [new tag]         v20151124         -> v20151124
+ * [new tag]         v20151210         -> v20151210
+ * [new tag]         v20151222         -> v20151222
+ * [new tag]         v20160202         -> v20160202
+ * [new tag]         v20160303         -> v20160303
+ * [new tag]         v20160310         -> v20160310
+ * [new tag]         v20160422         -> v20160422
+ * [new tag]         v20160509         -> v20160509
+ * [new tag]         v20160628         -> v20160628
+ * [new tag]         v20160629         -> v20160629
+ * [new tag]         v20160726         -> v20160726
+Already up to date.
+Updating /home/rainer/.pyenv/plugins/pyenv-doctor...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 8 (delta 5), reused 2 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From https://github.com/pyenv/pyenv-doctor
+ * branch            master     -> FETCH_HEAD
+ * [new tag]         v20130611  -> v20130611
+Already up to date.
+Updating /home/rainer/.pyenv/plugins/pyenv-installer...
+remote: Enumerating objects: 156, done.
+remote: Counting objects: 100% (156/156), done.
+remote: Compressing objects: 100% (62/62), done.
+remote: Total 148 (delta 68), reused 147 (delta 67), pack-reused 0
+Receiving objects: 100% (148/148), 24.20 KiB | 3.46 MiB/s, done.
+Resolving deltas: 100% (68/68), completed with 1 local object.
+From https://github.com/pyenv/pyenv-installer
+ * branch            master     -> FETCH_HEAD
+ * [new tag]         v20150113  -> v20150113
+Already up to date.
+Updating /home/rainer/.pyenv/plugins/pyenv-update...
+From https://github.com/pyenv/pyenv-update
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Updating /home/rainer/.pyenv/plugins/pyenv-virtualenv...
+remote: Enumerating objects: 2049, done.
+remote: Counting objects: 100% (2049/2049), done.
+remote: Compressing objects: 100% (583/583), done.
+remote: Total 2005 (delta 1426), reused 1959 (delta 1380), pack-reused 0
+Receiving objects: 100% (2005/2005), 543.99 KiB | 5.67 MiB/s, done.
+Resolving deltas: 100% (1426/1426), completed with 33 local objects.
+From https://github.com/pyenv/pyenv-virtualenv
+ * branch            master      -> FETCH_HEAD
+ * [new tag]         v1.0.0      -> v1.0.0
+ * [new tag]         v1.1.0      -> v1.1.0
+ * [new tag]         v1.1.1      -> v1.1.1
+ * [new tag]         v1.1.2      -> v1.1.2
+ * [new tag]         v1.1.3      -> v1.1.3
+ * [new tag]         v1.1.4      -> v1.1.4
+ * [new tag]         v1.1.5      -> v1.1.5
+ * [new tag]         v20120927   -> v20120927
+ * [new tag]         v20121023   -> v20121023
+ * [new tag]         v20130218   -> v20130218
+ * [new tag]         v20130307   -> v20130307
+ * [new tag]         v20130507   -> v20130507
+ * [new tag]         v20130527   -> v20130527
+ * [new tag]         v20130614   -> v20130614
+ * [new tag]         v20130622   -> v20130622
+ * [new tag]         v20131216   -> v20131216
+ * [new tag]         v20140110   -> v20140110
+ * [new tag]         v20140110.1 -> v20140110.1
+ * [new tag]         v20140123   -> v20140123
+ * [new tag]         v20140421   -> v20140421
+ * [new tag]         v20140602   -> v20140602
+ * [new tag]         v20140614   -> v20140614
+ * [new tag]         v20140615   -> v20140615
+ * [new tag]         v20140705   -> v20140705
+ * [new tag]         v20141012   -> v20141012
+ * [new tag]         v20141106   -> v20141106
+ * [new tag]         v20150119   -> v20150119
+ * [new tag]         v20150526   -> v20150526
+ * [new tag]         v20150719   -> v20150719
+ * [new tag]         v20151006   -> v20151006
+ * [new tag]         v20151103   -> v20151103
+ * [new tag]         v20151222   -> v20151222
+ * [new tag]         v20151229   -> v20151229
+ * [new tag]         v20160112   -> v20160112
+ * [new tag]         v20160202   -> v20160202
+ * [new tag]         v20160315   -> v20160315
+ * [new tag]         v20160716   -> v20160716
+Already up to date.
+Updating /home/rainer/.pyenv/plugins/pyenv-which-ext...
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 19 (delta 8), reused 17 (delta 6), pack-reused 0
+Unpacking objects: 100% (19/19), done.
+From https://github.com/pyenv/pyenv-which-ext
+ * branch            master     -> FETCH_HEAD
+ * [new tag]         v0.0.1     -> v0.0.1
+ * [new tag]         v0.0.2     -> v0.0.2
+Already up to date.
+rainer@donkeynano46:~/projects/pyenv$ pyenv install 3.7
+python-build: definition not found: 3.7
+
+The following versions contain `3.7' in the name:
+  2.3.7
+  3.3.7
+  3.7.0
+  3.7-dev
+  3.7.1
+  3.7.2
+  3.7.3
+  3.7.4
+  3.7.5
+  3.7.6
+  3.7.7
+  3.7.8
+  3.7.9
+  3.7.10
+  3.7.11
+  3.7.12
+  3.7.13
+  3.7.14
+  miniconda-3.7.0
+  miniconda3-3.7.0
+  miniconda3-3.7-4.8.2
+  miniconda3-3.7-4.8.3
+  miniconda3-3.7-4.9.2
+  miniconda3-3.7-4.10.1
+  miniconda3-3.7-4.10.3
+  miniconda3-3.7-4.11.0
+  miniconda3-3.7-4.12.0
+  pypy3.7-c-jit-latest
+  pypy3.7-7.3.2-src
+  pypy3.7-7.3.2
+  pypy3.7-7.3.3-src
+  pypy3.7-7.3.3
+  pypy3.7-7.3.4-src
+  pypy3.7-7.3.4
+  pypy3.7-7.3.5-src
+  pypy3.7-7.3.5
+  pypy3.7-7.3.6-src
+  pypy3.7-7.3.6
+  pypy3.7-7.3.7-src
+  pypy3.7-7.3.7
+  pypy3.7-7.3.8-src
+  pypy3.7-7.3.8
+  pypy3.7-7.3.9-src
+  pypy3.7-7.3.9
+  pypy3.8-7.3.7-src
+  pypy3.8-7.3.7
+  stackless-3.3.7
+  stackless-3.7.5
+
+See all available versions with `pyenv install --list'.
+
+If the version you need is missing, try upgrading pyenv:
+
+  cd /home/rainer/.pyenv/plugins/python-build/../.. && git pull && cd -
+rainer@donkeynano46:~/projects/pyenv$ pyenv install 3.7.14
+Downloading Python-3.7.14.tar.xz...
+-> https://www.python.org/ftp/python/3.7.14/Python-3.7.14.tar.xz
+Installing Python-3.7.14...
+patching file Doc/library/ctypes.rst
+patching file Lib/test/test_unicode.py
+patching file Modules/_ctypes/_ctypes.c
+patching file Modules/_ctypes/callproc.c
+patching file Modules/_ctypes/ctypes.h
+patching file setup.py
+patching file 'Misc/NEWS.d/next/Core and Builtins/2020-06-30-04-44-29.bpo-41100.PJwA6F.rst'
+patching file Modules/_decimal/libmpdec/mpdecimal.h
+patching file setup.py
+WARNING: The Python bz2 extension was not compiled. Missing the bzip2 lib?
+WARNING: The Python curses extension was not compiled. Missing the ncurses lib?
+WARNING: The Python readline extension was not compiled. Missing the GNU readline lib?
+WARNING: The Python sqlite3 extension was not compiled. Missing the SQLite3 lib?
+WARNING: The Python tkinter extension was not compiled and GUI subsystem has been detected. Missing the Tk toolkit?
+WARNING: The Python lzma extension was not compiled. Missing the lzma lib?
+Installed Python-3.7.14 to /home/rainer/.pyenv/versions/3.7.14
+
+rainer@donkeynano46:~/projects/pyenv$ pyenv global 3.7.14
+rainer@donkeynano46:~/projects/pyenv$ 
+rainer@donkeynano46:~/projects/pyenv$ source env/bin/activate
+bash: env/bin/activate: No such file or directory
+rainer@donkeynano46:~/projects/pyenv$ cd
+rainer@donkeynano46:~$ source env/bin/activate
+(env) rainer@donkeynano46:~$ donkey
+________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
+
+using donkey v4.3.22 ...
+Traceback (most recent call last):
+  File "/home/rainer/env/bin/donkey", line 33, in <module>
+    sys.exit(load_entry_point('donkeycar', 'console_scripts', 'donkey')())
+  File "/home/rainer/env/bin/donkey", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/home/rainer/.local/lib/python3.6/site-packages/importlib_metadata/__init__.py", line 194, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rainer/projects/donkeycar/donkeycar/__init__.py", line 26, in <module>
+    from . import utils
+  File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 22, in <module>
+    from PIL import Image
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/Image.py", line 52, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1131, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1112, in _legacy_get_spec
+  File "<frozen importlib._bootstrap>", line 441, in spec_from_loader
+  File "<frozen importlib._bootstrap_external>", line 544, in spec_from_file_location
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/_deprecate.py", line 1
+SyntaxError: future feature annotations is not defined
+(env) rainer@donkeynano46:~$ python -V
+Python 3.6.9
+(env) rainer@donkeynano46:~$ pyenv
+pyenv 2.3.5
+Usage: pyenv <command> [<args>]
+
+Some useful pyenv commands are:
+   activate    Activate virtual environment
+   commands    List all available pyenv commands
+   deactivate   Deactivate virtual environment
+   doctor      Verify pyenv installation and development tools to build pythons.
+   exec        Run an executable with the selected Python version
+   global      Set or show the global Python version(s)
+   help        Display help for a command
+   hooks       List hook scripts for a given pyenv command
+   init        Configure the shell environment for pyenv
+   install     Install a Python version using python-build
+   local       Set or show the local application-specific Python version(s)
+   prefix      Display prefixes for Python versions
+   rehash      Rehash pyenv shims (run this after installing executables)
+   root        Display the root directory where versions and shims are kept
+   shell       Set or show the shell-specific Python version
+   shims       List existing pyenv shims
+   uninstall   Uninstall Python versions
+   version     Show the current Python version(s) and its origin
+   --version   Display the version of pyenv
+   version-file   Detect the file that sets the current pyenv version
+   version-name   Show the current Python version
+   version-origin   Explain how the current Python version is set
+   versions    List all Python versions available to pyenv
+   virtualenv   Create a Python virtualenv using the pyenv-virtualenv plugin
+   virtualenv-delete   Uninstall a specific Python virtualenv
+   virtualenv-init   Configure the shell environment for pyenv-virtualenv
+   virtualenv-prefix   Display real_prefix for a Python virtualenv version
+   virtualenvs   List all Python virtualenvs found in `$PYENV_ROOT/versions/*'.
+   whence      List all Python versions that contain the given executable
+   which       Display the full path to an executable
+
+See `pyenv help <command>' for information on a specific command.
+For full documentation, see: https://github.com/pyenv/pyenv#readme
+(env) rainer@donkeynano46:~$ pyenv global 3.7.14
+(env) rainer@donkeynano46:~$ donkey
+________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
+
+using donkey v4.3.22 ...
+Traceback (most recent call last):
+  File "/home/rainer/env/bin/donkey", line 33, in <module>
+    sys.exit(load_entry_point('donkeycar', 'console_scripts', 'donkey')())
+  File "/home/rainer/env/bin/donkey", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/home/rainer/.local/lib/python3.6/site-packages/importlib_metadata/__init__.py", line 194, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rainer/projects/donkeycar/donkeycar/__init__.py", line 26, in <module>
+    from . import utils
+  File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 22, in <module>
+    from PIL import Image
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/Image.py", line 52, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1131, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1112, in _legacy_get_spec
+  File "<frozen importlib._bootstrap>", line 441, in spec_from_loader
+  File "<frozen importlib._bootstrap_external>", line 544, in spec_from_file_location
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/_deprecate.py", line 1
+SyntaxError: future feature annotations is not defined
+(env) rainer@donkeynano46:~$ python -V
+Python 3.6.9
+(env) rainer@donkeynano46:~$ deactivate
+
+
+rainer@donkeynano46:~/projects/donkeycar$ ./install/reproducing-Eds-script/install-jp46.sh 
+ln: failed to create symbolic link '/usr/include/xlocale.h': Permission denied
+[sudo] password for rainer: 
+Get:1 file:/var/cuda-repo-l4t-10-2-local  InRelease
+Ign:1 file:/var/cuda-repo-l4t-10-2-local  InRelease
+Get:2 file:/var/visionworks-repo  InRelease
+Ign:2 file:/var/visionworks-repo  InRelease
+Get:3 file:/var/visionworks-sfm-repo  InRelease
+Ign:3 file:/var/visionworks-sfm-repo  InRelease
+Get:4 file:/var/visionworks-tracking-repo  InRelease
+Ign:4 file:/var/visionworks-tracking-repo  InRelease
+Get:5 file:/var/cuda-repo-l4t-10-2-local  Release [564 B]
+Get:6 file:/var/visionworks-repo  Release [2.001 B]
+Get:5 file:/var/cuda-repo-l4t-10-2-local  Release [564 B]
+Get:7 file:/var/visionworks-sfm-repo  Release [2.005 B]     
+Get:8 file:/var/visionworks-tracking-repo  Release [2.010 B]
+Get:6 file:/var/visionworks-repo  Release [2.001 B]                                             
+Get:7 file:/var/visionworks-sfm-repo  Release [2.005 B]                                         
+Get:8 file:/var/visionworks-tracking-repo  Release [2.010 B]                              
+Hit:9 http://ports.ubuntu.com/ubuntu-ports bionic InRelease                                         
+Get:10 http://ports.ubuntu.com/ubuntu-ports bionic-updates InRelease [88,7 kB]                      
+Get:11 http://ports.ubuntu.com/ubuntu-ports bionic-backports InRelease [83,3 kB]                    
+Get:12 http://ports.ubuntu.com/ubuntu-ports bionic-security InRelease [88,7 kB]                     
+Hit:13 https://repo.download.nvidia.com/jetson/common r32.6 InRelease              
+Hit:14 https://repo.download.nvidia.com/jetson/t210 r32.6 InRelease                
+Get:19 http://ports.ubuntu.com/ubuntu-ports bionic-updates/main arm64 DEP-11 Metadata [291 kB]
+Get:20 http://ports.ubuntu.com/ubuntu-ports bionic-updates/universe arm64 DEP-11 Metadata [296 kB]
+Get:21 http://ports.ubuntu.com/ubuntu-ports bionic-backports/main arm64 DEP-11 Metadata [8.124 B]   
+Get:22 http://ports.ubuntu.com/ubuntu-ports bionic-backports/universe arm64 DEP-11 Metadata [10,0 kB]
+Get:23 http://ports.ubuntu.com/ubuntu-ports bionic-security/main arm64 DEP-11 Metadata [49,2 kB]    
+Get:24 http://ports.ubuntu.com/ubuntu-ports bionic-security/universe arm64 DEP-11 Metadata [56,0 kB]
+Fetched 972 kB in 4s (239 kB/s)                               
+^Crainer@donkeynano46:~/projects/donkeycar$ clear
+
+rainer@donkeynano46:~/projects/donkeycar$ ./install/reproducing-Eds-script/install-jp46.sh 
+ln: failed to create symbolic link '/usr/include/xlocale.h': Permission denied
+Get:1 file:/var/cuda-repo-l4t-10-2-local  InRelease
+Ign:1 file:/var/cuda-repo-l4t-10-2-local  InRelease
+Get:2 file:/var/visionworks-repo  InRelease             
+Ign:2 file:/var/visionworks-repo  InRelease             
+Get:3 file:/var/visionworks-sfm-repo  InRelease         
+Ign:3 file:/var/visionworks-sfm-repo  InRelease         
+Get:4 file:/var/visionworks-tracking-repo  InRelease                                             
+Ign:4 file:/var/visionworks-tracking-repo  InRelease                                             
+Get:5 file:/var/cuda-repo-l4t-10-2-local  Release [564 B]                                        
+Get:6 file:/var/visionworks-repo  Release [2.001 B]                                              
+Get:7 file:/var/visionworks-sfm-repo  Release [2.005 B]                                          
+Get:8 file:/var/visionworks-tracking-repo  Release [2.010 B]                    
+Get:5 file:/var/cuda-repo-l4t-10-2-local  Release [564 B]                       
+Hit:9 http://ports.ubuntu.com/ubuntu-ports bionic InRelease                                         
+Get:6 file:/var/visionworks-repo  Release [2.001 B]                             
+Get:7 file:/var/visionworks-sfm-repo  Release [2.005 B]                                             
+Get:8 file:/var/visionworks-tracking-repo  Release [2.010 B]                                        
+Hit:10 http://ports.ubuntu.com/ubuntu-ports bionic-updates InRelease                                
+Hit:11 http://ports.ubuntu.com/ubuntu-ports bionic-backports InRelease                              
+Hit:12 http://ports.ubuntu.com/ubuntu-ports bionic-security InRelease                               
+Hit:13 https://repo.download.nvidia.com/jetson/common r32.6 InRelease                               
+Hit:14 https://repo.download.nvidia.com/jetson/t210 r32.6 InRelease               
+Reading package lists... Done 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+The following packages have been kept back:
+  ubuntu-drivers-common
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libblas-dev is already the newest version (3.7.1-4ubuntu1).
+libjpeg8-dev is already the newest version (8c-2ubuntu8).
+liblapack-dev is already the newest version (3.7.1-4ubuntu1).
+zip is already the newest version (3.0-11build1).
+hdf5-tools is already the newest version (1.10.0-patch1+docs-4).
+libhdf5-dev is already the newest version (1.10.0-patch1+docs-4).
+libhdf5-serial-dev is already the newest version (1.10.0-patch1+docs-4).
+gfortran is already the newest version (4:7.4.0-1ubuntu2.3).
+zlib1g-dev is already the newest version (1:1.2.11.dfsg-0ubuntu2.2).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python3-dev is already the newest version (3.6.7-1~18.04).
+python3-pip is already the newest version (9.0.1-2.3~ubuntu1.18.04.5).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libffi-dev is already the newest version (3.2.1-8).
+libopenblas-dev is already the newest version (0.2.20+ds-4).
+libcurl4-openssl-dev is already the newest version (7.58.0-2ubuntu3.20).
+libpng-dev is already the newest version (1.6.34-1ubuntu0.18.04.2).
+libssl-dev is already the newest version (1.1.1-1ubuntu2.1~18.04.20).
+libxml2-dev is already the newest version (2.9.4+dfsg1-6.1ubuntu1.7).
+libxslt1-dev is already the newest version (1.1.29-5ubuntu0.3).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+nano is already the newest version (2.9.3-2).
+git is already the newest version (1:2.17.1-1ubuntu0.12).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libopenblas-dev is already the newest version (0.2.20+ds-4).
+libopenmpi-dev is already the newest version (2.1.1-8).
+openmpi-bin is already the newest version (2.1.1-8).
+openmpi-doc is already the newest version (2.1.1-8).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python3-h5py is already the newest version (2.7.1-2).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+pyenv-virtualenv: deactivate must be sourced. Run 'source deactivate' instead of 'deactivate'
+Collecting virtualenv
+  Using cached virtualenv-20.16.5-py3-none-any.whl (8.8 MB)
+Collecting distlib<1,>=0.3.5
+  Using cached distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+Collecting filelock<4,>=3.4.1
+  Downloading filelock-3.8.0-py3-none-any.whl (10 kB)
+Collecting importlib-metadata>=4.8.3
+  Downloading importlib_metadata-5.0.0-py3-none-any.whl (21 kB)
+Collecting platformdirs<3,>=2.4
+  Downloading platformdirs-2.5.2-py3-none-any.whl (14 kB)
+Collecting typing-extensions>=3.6.4
+  Downloading typing_extensions-4.4.0-py3-none-any.whl (26 kB)
+Collecting zipp>=0.5
+  Downloading zipp-3.9.0-py3-none-any.whl (5.8 kB)
+Installing collected packages: distlib, zipp, typing-extensions, platformdirs, filelock, importlib-metadata, virtualenv
+Successfully installed distlib-0.3.6 filelock-3.8.0 importlib-metadata-5.0.0 platformdirs-2.5.2 typing-extensions-4.4.0 virtualenv-20.16.5 zipp-3.9.0
+WARNING: You are using pip version 22.0.4; however, version 22.2.2 is available.
+You should consider upgrading via the '/home/rainer/.pyenv/versions/3.7.14/bin/python3.7 -m pip install --upgrade pip' command.
+created virtual environment CPython3.7.14.final.0-64 in 3229ms
+  creator CPython3Posix(dest=/home/rainer/env, clear=False, no_vcs_ignore=False, global=True)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/rainer/.local/share/virtualenv)
+    added seed packages: pip==22.2.2, setuptools==65.3.0, wheel==0.37.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Requirement already satisfied: pip in /home/rainer/env/lib/python3.7/site-packages (22.2.2)
+Collecting testresources
+  Using cached testresources-2.0.1-py2.py3-none-any.whl (36 kB)
+Collecting setuptools==49.6
+  Using cached setuptools-49.6.0-py3-none-any.whl (803 kB)
+Collecting pbr>=1.8
+  Using cached pbr-5.10.0-py2.py3-none-any.whl (112 kB)
+Installing collected packages: setuptools, pbr, testresources
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 65.3.0
+    Uninstalling setuptools-65.3.0:
+      Successfully uninstalled setuptools-65.3.0
+Successfully installed pbr-5.10.0 setuptools-49.6.0 testresources-2.0.1
+Collecting futures==3.1.1
+  Using cached futures-3.1.1-py3-none-any.whl (2.8 kB)
+Collecting protobuf==3.12.2
+  Using cached protobuf-3.12.2-py2.py3-none-any.whl (443 kB)
+Collecting pybind11==2.5.0
+  Using cached pybind11-2.5.0-py2.py3-none-any.whl (296 kB)
+Requirement already satisfied: setuptools in /home/rainer/env/lib/python3.7/site-packages (from protobuf==3.12.2) (49.6.0)
+Collecting six>=1.9
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+WARNING: The candidate selected for download or install is a yanked version: 'futures' candidate (version 3.1.1 at https://files.pythonhosted.org/packages/05/80/f41cca0ea1ff69bce7e7a7d76182b47bb4e1a494380a532af3e8ee70b9ec/futures-3.1.1-py3-none-any.whl (from https://pypi.org/simple/futures/))
+Reason for being yanked: Does not declare incompatibility with Python 3
+Installing collected packages: pybind11, futures, six, protobuf
+Successfully installed futures-3.1.1 protobuf-3.12.2 pybind11-2.5.0 six-1.16.0
+Collecting cython==0.29.21
+  Using cached Cython-0.29.21-py2.py3-none-any.whl (974 kB)
+Collecting pyserial
+  Using cached pyserial-3.5-py2.py3-none-any.whl (90 kB)
+Installing collected packages: pyserial, cython
+Successfully installed cython-0.29.21 pyserial-3.5
+Collecting future==0.18.2
+  Using cached future-0.18.2.tar.gz (829 kB)
+  Preparing metadata (setup.py) ... done
+Collecting mock==4.0.2
+  Using cached mock-4.0.2-py3-none-any.whl (28 kB)
+Collecting h5py==2.10.0
+  Using cached h5py-2.10.0.tar.gz (301 kB)
+  Preparing metadata (setup.py) ... done
+Collecting keras_preprocessing==1.1.2
+  Using cached Keras_Preprocessing-1.1.2-py2.py3-none-any.whl (42 kB)
+Collecting keras_applications==1.0.8
+  Using cached Keras_Applications-1.0.8-py3-none-any.whl (50 kB)
+Collecting gast==0.3.3
+  Using cached gast-0.3.3-py2.py3-none-any.whl (9.7 kB)
+Collecting numpy>=1.7
+  Downloading numpy-1.21.6-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.0/13.0 MB 5.7 MB/s eta 0:00:00
+Requirement already satisfied: six in /home/rainer/env/lib/python3.7/site-packages (from h5py==2.10.0) (1.16.0)
+Building wheels for collected packages: future, h5py
+  Building wheel for future (setup.py) ... done
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=99f2f5db12c8aa6fc66a3672eb58ee189c762e561576494900895a5861f6b7f7
+  Stored in directory: /home/rainer/.cache/pip/wheels/56/b0/fe/4410d17b32f1f0c3cf54cdfb2bc04d7b4b8f4ae377e2229ba0
+  Building wheel for h5py (setup.py) ... done
+  Created wheel for h5py: filename=h5py-2.10.0-cp37-cp37m-linux_aarch64.whl size=4088276 sha256=c6cdedd5a1428862fb9a2ac00d6aaeb9fa1524905bf6bcd15c3a20ba928df48a
+  Stored in directory: /home/rainer/.cache/pip/wheels/58/e7/f7/d9385040f9b6919de4a5c05625c4e655999412f12c96d3c7c3
+Successfully built future h5py
+Installing collected packages: numpy, mock, gast, future, keras_preprocessing, h5py, keras_applications
+Successfully installed future-0.18.2 gast-0.3.3 h5py-2.10.0 keras_applications-1.0.8 keras_preprocessing-1.1.2 mock-4.0.2 numpy-1.21.6
+Collecting absl-py==0.9.0
+  Using cached absl-py-0.9.0.tar.gz (104 kB)
+  Preparing metadata (setup.py) ... done
+Collecting py-cpuinfo==7.0.0
+  Using cached py-cpuinfo-7.0.0.tar.gz (95 kB)
+  Preparing metadata (setup.py) ... done
+Collecting psutil==5.7.2
+  Using cached psutil-5.7.2.tar.gz (460 kB)
+  Preparing metadata (setup.py) ... done
+Collecting portpicker==1.3.1
+  Using cached portpicker-1.3.1.tar.gz (18 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: six in /home/rainer/env/lib/python3.7/site-packages (1.16.0)
+Collecting requests==2.24.0
+  Using cached requests-2.24.0-py2.py3-none-any.whl (61 kB)
+Collecting astor==0.8.1
+  Using cached astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Collecting termcolor==1.1.0
+  Using cached termcolor-1.1.0.tar.gz (3.9 kB)
+  Preparing metadata (setup.py) ... done
+Collecting wrapt==1.12.1
+  Using cached wrapt-1.12.1.tar.gz (27 kB)
+  Preparing metadata (setup.py) ... done
+Collecting google-pasta==0.2.0
+  Using cached google_pasta-0.2.0-py3-none-any.whl (57 kB)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+  Downloading urllib3-1.25.11-py2.py3-none-any.whl (127 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.0/128.0 kB 3.9 MB/s eta 0:00:00
+Collecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.4/133.4 kB 3.8 MB/s eta 0:00:00
+Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 kB 2.1 MB/s eta 0:00:00
+Collecting certifi>=2017.4.17
+  Downloading certifi-2022.9.24-py3-none-any.whl (161 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.1/161.1 kB 3.1 MB/s eta 0:00:00
+Building wheels for collected packages: absl-py, py-cpuinfo, psutil, portpicker, termcolor, wrapt
+  Building wheel for absl-py (setup.py) ... done
+  Created wheel for absl-py: filename=absl_py-0.9.0-py3-none-any.whl size=121930 sha256=af24099ed620933899b95043e2399b27b82fef2c730ef0607b3243fe342c6502
+  Stored in directory: /home/rainer/.cache/pip/wheels/cc/af/1a/498a24d0730ef484019e007bb9e8cef3ac00311a672c049a3e
+  Building wheel for py-cpuinfo (setup.py) ... done
+  Created wheel for py-cpuinfo: filename=py_cpuinfo-7.0.0-py3-none-any.whl size=20070 sha256=6edcceacf22b15e2af1b755fc05d50556a7def89549d4a35e53a159ce56fc576
+  Stored in directory: /home/rainer/.cache/pip/wheels/d7/59/0d/58c5e576d9192261fa3da00466eebe6f7a1ac1873a7ab1f2ce
+  Building wheel for psutil (setup.py) ... done
+  Created wheel for psutil: filename=psutil-5.7.2-cp37-cp37m-linux_aarch64.whl size=284686 sha256=270a1e5547d710e23f909ca6dd2b10b5fd53da92b0e294fd49bcd59632e56d4c
+  Stored in directory: /home/rainer/.cache/pip/wheels/2d/43/97/00701864a7bee6d9e1a52dd682537dcbf1d013d0e2e6f0c1f1
+  Building wheel for portpicker (setup.py) ... done
+  Created wheel for portpicker: filename=portpicker-1.3.1-py3-none-any.whl size=13664 sha256=0df82b516df1bf5d3a1828b46a85ce1d9f7aa41ddfb17e46dffae8311da4cde3
+  Stored in directory: /home/rainer/.cache/pip/wheels/8a/9c/69/e55ffd12c6edd2bb70853ebe4a540d37cb8373ab0b2f632b61
+  Building wheel for termcolor (setup.py) ... done
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=b726df06055e15b090eb58c3226a2e3bd855e378ff9409201447cf64a8e14b96
+  Stored in directory: /home/rainer/.cache/pip/wheels/3f/e3/ec/8a8336ff196023622fbcb36de0c5a5c218cbb24111d1d4c7f2
+  Building wheel for wrapt (setup.py) ... done
+  Created wheel for wrapt: filename=wrapt-1.12.1-cp37-cp37m-linux_aarch64.whl size=71550 sha256=031d04fd5e9a6577c2ebec8d4e22e473444357d79354910a844607cefda2cb96
+  Stored in directory: /home/rainer/.cache/pip/wheels/62/76/4c/aa25851149f3f6d9785f6c869387ad82b3fd37582fa8147ac6
+Successfully built absl-py py-cpuinfo psutil portpicker termcolor wrapt
+Installing collected packages: wrapt, termcolor, py-cpuinfo, portpicker, chardet, urllib3, psutil, idna, google-pasta, certifi, astor, absl-py, requests
+Successfully installed absl-py-0.9.0 astor-0.8.1 certifi-2022.9.24 chardet-3.0.4 google-pasta-0.2.0 idna-2.10 portpicker-1.3.1 psutil-5.7.2 py-cpuinfo-7.0.0 requests-2.24.0 termcolor-1.1.0 urllib3-1.25.11 wrapt-1.12.1
+Collecting numpy==1.19.4
+  Downloading numpy-1.19.4-cp37-cp37m-manylinux2014_aarch64.whl (12.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 6.1 MB/s eta 0:00:00
+Requirement already satisfied: future==0.18.2 in /home/rainer/env/lib/python3.7/site-packages (0.18.2)
+Collecting mock==3.0.5
+  Using cached mock-3.0.5-py2.py3-none-any.whl (25 kB)
+Requirement already satisfied: keras_preprocessing==1.1.2 in /home/rainer/env/lib/python3.7/site-packages (1.1.2)
+Requirement already satisfied: keras_applications==1.0.8 in /home/rainer/env/lib/python3.7/site-packages (1.0.8)
+Collecting gast==0.4.0
+  Using cached gast-0.4.0-py3-none-any.whl (9.8 kB)
+Requirement already satisfied: protobuf in /home/rainer/env/lib/python3.7/site-packages (3.12.2)
+Collecting protobuf
+  Downloading protobuf-4.21.7-cp37-abi3-manylinux2014_aarch64.whl (403 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 403.7/403.7 kB 5.9 MB/s eta 0:00:00
+Requirement already satisfied: pybind11 in /home/rainer/env/lib/python3.7/site-packages (2.5.0)
+Collecting pybind11
+  Using cached pybind11-2.10.0-py3-none-any.whl (213 kB)
+Requirement already satisfied: cython in /home/rainer/env/lib/python3.7/site-packages (0.29.21)
+Collecting cython
+  Downloading Cython-0.29.32-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.manylinux_2_24_aarch64.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 7.2 MB/s eta 0:00:00
+Collecting pkgconfig
+  Using cached pkgconfig-1.5.5-py3-none-any.whl (6.7 kB)
+Installing collected packages: pybind11, protobuf, pkgconfig, numpy, mock, gast, cython
+  Attempting uninstall: pybind11
+    Found existing installation: pybind11 2.5.0
+    Uninstalling pybind11-2.5.0:
+      Successfully uninstalled pybind11-2.5.0
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 3.12.2
+    Uninstalling protobuf-3.12.2:
+      Successfully uninstalled protobuf-3.12.2
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.21.6
+    Uninstalling numpy-1.21.6:
+      Successfully uninstalled numpy-1.21.6
+  Attempting uninstall: mock
+    Found existing installation: mock 4.0.2
+    Uninstalling mock-4.0.2:
+      Successfully uninstalled mock-4.0.2
+  Attempting uninstall: gast
+    Found existing installation: gast 0.3.3
+    Uninstalling gast-0.3.3:
+      Successfully uninstalled gast-0.3.3
+  Attempting uninstall: cython
+    Found existing installation: Cython 0.29.21
+    Uninstalling Cython-0.29.21:
+      Successfully uninstalled Cython-0.29.21
+Successfully installed cython-0.29.32 gast-0.4.0 mock-3.0.5 numpy-1.19.4 pkgconfig-1.5.5 protobuf-4.21.7 pybind11-2.10.0
+Collecting h5py==3.1.0
+  Using cached h5py-3.1.0.tar.gz (371 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: numpy>=1.14.5 in /home/rainer/env/lib/python3.7/site-packages (from h5py==3.1.0) (1.19.4)
+Collecting cached-property
+  Downloading cached_property-1.5.2-py2.py3-none-any.whl (7.6 kB)
+Building wheels for collected packages: h5py
+  Building wheel for h5py (pyproject.toml) ... done
+  Created wheel for h5py: filename=h5py-3.1.0-cp37-cp37m-linux_aarch64.whl size=4554011 sha256=768e9ab3903ddc30cf6a3a715e60355906797e72c8bd86ee697b7ab37562e90d
+  Stored in directory: /home/rainer/.cache/pip/wheels/8b/ff/b0/8ec15768fa86bc9635867a6acbbb6f203c82f264afd667bb36
+Successfully built h5py
+Installing collected packages: cached-property, h5py
+  Attempting uninstall: h5py
+    Found existing installation: h5py 2.10.0
+    Uninstalling h5py-2.10.0:
+      Successfully uninstalled h5py-2.10.0
+Successfully installed cached-property-1.5.2 h5py-3.1.0
+Collecting gdown==3.10.1
+  Using cached gdown-3.10.1.tar.gz (7.5 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: filelock in /home/rainer/.pyenv/versions/3.7.14/lib/python3.7/site-packages (from gdown==3.10.1) (3.8.0)
+Requirement already satisfied: requests[socks] in /home/rainer/env/lib/python3.7/site-packages (from gdown==3.10.1) (2.24.0)
+Requirement already satisfied: six in /home/rainer/env/lib/python3.7/site-packages (from gdown==3.10.1) (1.16.0)
+Collecting tqdm
+  Using cached tqdm-4.64.1-py2.py3-none-any.whl (78 kB)
+Requirement already satisfied: chardet<4,>=3.0.2 in /home/rainer/env/lib/python3.7/site-packages (from requests[socks]->gdown==3.10.1) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /home/rainer/env/lib/python3.7/site-packages (from requests[socks]->gdown==3.10.1) (1.25.11)
+Requirement already satisfied: idna<3,>=2.5 in /home/rainer/env/lib/python3.7/site-packages (from requests[socks]->gdown==3.10.1) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /home/rainer/env/lib/python3.7/site-packages (from requests[socks]->gdown==3.10.1) (2022.9.24)
+Collecting PySocks!=1.5.7,>=1.5.6
+  Using cached PySocks-1.7.1-py3-none-any.whl (16 kB)
+Building wheels for collected packages: gdown
+  Building wheel for gdown (setup.py) ... done
+  Created wheel for gdown: filename=gdown-3.10.1-py3-none-any.whl size=8973 sha256=e019ce3a932b663d184bdef54ef116fbe4571c6b9878032098905c2699250eea
+  Stored in directory: /home/rainer/.cache/pip/wheels/a0/2c/d0/8e682e8c3c50863ac497a373c7efe253ebae6addc32c9e9200
+Successfully built gdown
+Installing collected packages: tqdm, PySocks, gdown
+Successfully installed PySocks-1.7.1 gdown-3.10.1 tqdm-4.64.1
+Looking in indexes: https://pypi.org/simple, https://developer.download.nvidia.com/compute/redist/jp/v46
+Collecting tensorflow
+  Downloading tensorflow-2.10.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.9 kB)
+Collecting tensorflow-cpu-aws==2.10.0
+  Downloading tensorflow_cpu_aws-2.10.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (213.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 213.8/213.8 MB 417.9 kB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=3.6.6 in /home/rainer/.pyenv/versions/3.7.14/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (4.4.0)
+Requirement already satisfied: google-pasta>=0.1.1 in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (0.2.0)
+Collecting libclang>=13.0.0
+  Downloading libclang-14.0.6-py2.py3-none-manylinux2014_aarch64.whl (12.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.6/12.6 MB 6.2 MB/s eta 0:00:00
+Collecting astunparse>=1.6.0
+  Using cached astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Collecting tensorflow-estimator<2.11,>=2.10.0
+  Downloading tensorflow_estimator-2.10.0-py2.py3-none-any.whl (438 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 438.7/438.7 kB 6.9 MB/s eta 0:00:00
+Collecting numpy>=1.20
+  Using cached numpy-1.21.6-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.0 MB)
+Collecting packaging
+  Using cached packaging-21.3-py3-none-any.whl (40 kB)
+Collecting tensorflow-io-gcs-filesystem>=0.23.1
+  Downloading tensorflow_io_gcs_filesystem-0.27.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 6.3 MB/s eta 0:00:00
+Collecting tensorboard<2.11,>=2.10
+  Using cached tensorboard-2.10.1-py3-none-any.whl (5.9 MB)
+Collecting keras<2.11,>=2.10.0
+  Downloading keras-2.10.0-py2.py3-none-any.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 4.8 MB/s eta 0:00:00
+Collecting absl-py>=1.0.0
+  Downloading absl_py-1.2.0-py3-none-any.whl (123 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.4/123.4 kB 3.5 MB/s eta 0:00:00
+Requirement already satisfied: termcolor>=1.1.0 in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (1.1.0)
+Requirement already satisfied: h5py>=2.9.0 in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (3.1.0)
+Requirement already satisfied: wrapt>=1.11.0 in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (1.12.1)
+Collecting flatbuffers>=2.0
+  Downloading flatbuffers-22.9.24-py2.py3-none-any.whl (26 kB)
+Collecting opt-einsum>=2.3.2
+  Using cached opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+Requirement already satisfied: keras-preprocessing>=1.1.1 in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (1.1.2)
+Requirement already satisfied: six>=1.12.0 in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (1.16.0)
+Requirement already satisfied: setuptools in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (49.6.0)
+Collecting protobuf<3.20,>=3.9.2
+  Downloading protobuf-3.19.6-cp37-cp37m-manylinux2014_aarch64.whl (912 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 912.9/912.9 kB 4.3 MB/s eta 0:00:00
+Requirement already satisfied: gast<=0.4.0,>=0.2.1 in /home/rainer/env/lib/python3.7/site-packages (from tensorflow-cpu-aws==2.10.0->tensorflow) (0.4.0)
+Collecting grpcio<2.0,>=1.24.3
+  Downloading grpcio-1.50.0rc1-cp37-cp37m-manylinux_2_17_aarch64.whl (66.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 MB 786.5 kB/s eta 0:00:00
+Requirement already satisfied: wheel<1.0,>=0.23.0 in /home/rainer/env/lib/python3.7/site-packages (from astunparse>=1.6.0->tensorflow-cpu-aws==2.10.0->tensorflow) (0.37.1)
+Requirement already satisfied: cached-property in /home/rainer/env/lib/python3.7/site-packages (from h5py>=2.9.0->tensorflow-cpu-aws==2.10.0->tensorflow) (1.5.2)
+Collecting tensorboard-plugin-wit>=1.6.0
+  Using cached tensorboard_plugin_wit-1.8.1-py3-none-any.whl (781 kB)
+Collecting markdown>=2.6.8
+  Downloading Markdown-3.4.1-py3-none-any.whl (93 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.3/93.3 kB 1.5 MB/s eta 0:00:00
+Collecting tensorboard-data-server<0.7.0,>=0.6.0
+  Using cached tensorboard_data_server-0.6.1-py3-none-any.whl (2.4 kB)
+Collecting google-auth-oauthlib<0.5,>=0.4.1
+  Using cached google_auth_oauthlib-0.4.6-py2.py3-none-any.whl (18 kB)
+Collecting werkzeug>=1.0.1
+  Downloading Werkzeug-2.2.2-py3-none-any.whl (232 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.7/232.7 kB 5.0 MB/s eta 0:00:00
+Requirement already satisfied: requests<3,>=2.21.0 in /home/rainer/env/lib/python3.7/site-packages (from tensorboard<2.11,>=2.10->tensorflow-cpu-aws==2.10.0->tensorflow) (2.24.0)
+Collecting google-auth<3,>=1.6.3
+  Using cached google_auth-2.12.0-py2.py3-none-any.whl (169 kB)
+Collecting pyparsing!=3.0.5,>=2.0.2
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB 3.3 MB/s eta 0:00:00
+Collecting cachetools<6.0,>=2.0.0
+  Downloading cachetools-5.2.0-py3-none-any.whl (9.3 kB)
+Collecting rsa<5,>=3.1.4
+  Using cached rsa-4.9-py3-none-any.whl (34 kB)
+Collecting pyasn1-modules>=0.2.1
+  Using cached pyasn1_modules-0.3.0rc1-py2.py3-none-any.whl (181 kB)
+Collecting requests-oauthlib>=0.7.0
+  Using cached requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: importlib-metadata>=4.4 in /home/rainer/.pyenv/versions/3.7.14/lib/python3.7/site-packages (from markdown>=2.6.8->tensorboard<2.11,>=2.10->tensorflow-cpu-aws==2.10.0->tensorflow) (5.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/rainer/env/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<2.11,>=2.10->tensorflow-cpu-aws==2.10.0->tensorflow) (2022.9.24)
+Requirement already satisfied: idna<3,>=2.5 in /home/rainer/env/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<2.11,>=2.10->tensorflow-cpu-aws==2.10.0->tensorflow) (2.10)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /home/rainer/env/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<2.11,>=2.10->tensorflow-cpu-aws==2.10.0->tensorflow) (1.25.11)
+Requirement already satisfied: chardet<4,>=3.0.2 in /home/rainer/env/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<2.11,>=2.10->tensorflow-cpu-aws==2.10.0->tensorflow) (3.0.4)
+Collecting MarkupSafe>=2.1.1
+  Downloading MarkupSafe-2.1.1-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (26 kB)
+Requirement already satisfied: zipp>=0.5 in /home/rainer/.pyenv/versions/3.7.14/lib/python3.7/site-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard<2.11,>=2.10->tensorflow-cpu-aws==2.10.0->tensorflow) (3.9.0)
+Collecting pyasn1<0.6.0,>=0.4.6
+  Using cached pyasn1-0.5.0rc2-py2.py3-none-any.whl (83 kB)
+Collecting oauthlib>=3.0.0
+  Using cached oauthlib-3.2.1-py3-none-any.whl (151 kB)
+Installing collected packages: tensorboard-plugin-wit, libclang, keras, flatbuffers, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, pyparsing, pyasn1, protobuf, oauthlib, numpy, MarkupSafe, grpcio, cachetools, astunparse, absl-py, werkzeug, rsa, requests-oauthlib, pyasn1-modules, packaging, opt-einsum, markdown, google-auth, google-auth-oauthlib, tensorboard, tensorflow-cpu-aws, tensorflow
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.21.7
+    Uninstalling protobuf-4.21.7:
+      Successfully uninstalled protobuf-4.21.7
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.19.4
+    Uninstalling numpy-1.19.4:
+      Successfully uninstalled numpy-1.19.4
+  Attempting uninstall: absl-py
+    Found existing installation: absl-py 0.9.0
+    Uninstalling absl-py-0.9.0:
+      Successfully uninstalled absl-py-0.9.0
+Successfully installed MarkupSafe-2.1.1 absl-py-1.2.0 astunparse-1.6.3 cachetools-5.2.0 flatbuffers-22.9.24 google-auth-2.12.0 google-auth-oauthlib-0.4.6 grpcio-1.50.0rc1 keras-2.10.0 libclang-14.0.6 markdown-3.4.1 numpy-1.21.6 oauthlib-3.2.1 opt-einsum-3.3.0 packaging-21.3 protobuf-3.19.6 pyasn1-0.5.0rc2 pyasn1-modules-0.3.0rc1 pyparsing-3.0.9 requests-oauthlib-1.3.1 rsa-4.9 tensorboard-2.10.1 tensorboard-data-server-0.6.1 tensorboard-plugin-wit-1.8.1 tensorflow-2.10.0 tensorflow-cpu-aws-2.10.0 tensorflow-estimator-2.10.0 tensorflow-io-gcs-filesystem-0.27.0 werkzeug-2.2.2
+[sudo] password for rainer: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libjpeg-dev is already the newest version (8c-2ubuntu8).
+libpython3-dev is already the newest version (3.6.7-1~18.04).
+zlib1g-dev is already the newest version (1:1.2.11.dfsg-0ubuntu2.2).
+libavcodec-dev is already the newest version (7:3.4.11-0ubuntu0.1).
+libavformat-dev is already the newest version (7:3.4.11-0ubuntu0.1).
+libswscale-dev is already the newest version (7:3.4.11-0ubuntu0.1).
+The following packages were automatically installed and are no longer required:
+  apt-clone archdetect-deb bogl-bterm busybox-static cryptsetup-bin dpkg-repack
+  gir1.2-timezonemap-1.0 gir1.2-xkl-1.0 grub-common kde-window-manager kinit kio kpackagetool5
+  kwayland-data kwin-common kwin-data kwin-x11 libdebian-installer4 libkdecorations2-5v5
+  libkdecorations2private5v5 libkf5activities5 libkf5attica5 libkf5completion-data
+  libkf5completion5 libkf5declarative-data libkf5declarative5 libkf5doctools5
+  libkf5globalaccel-data libkf5globalaccel5 libkf5globalaccelprivate5 libkf5idletime5
+  libkf5jobwidgets-data libkf5jobwidgets5 libkf5kcmutils-data libkf5kcmutils5 libkf5kiocore5
+  libkf5kiontlm5 libkf5kiowidgets5 libkf5newstuff-data libkf5newstuff5 libkf5newstuffcore5
+  libkf5package-data libkf5package5 libkf5plasma5 libkf5quickaddons5 libkf5solid5 libkf5solid5-data
+  libkf5sonnet5-data libkf5sonnetcore5 libkf5sonnetui5 libkf5textwidgets-data libkf5textwidgets5
+  libkf5waylandclient5 libkf5waylandserver5 libkf5xmlgui-bin libkf5xmlgui-data libkf5xmlgui5
+  libkscreenlocker5 libkwin4-effect-builtins1 libkwineffects11 libkwinglutils11
+  libkwinxrenderutils11 libqgsttools-p1 libqt5designer5 libqt5help5 libqt5multimedia5
+  libqt5multimedia5-plugins libqt5multimediaquick-p5 libqt5multimediawidgets5 libqt5opengl5
+  libqt5quickwidgets5 libqt5sql5 libqt5test5 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  os-prober python3-dbus.mainloop.pyqt5 python3-icu python3-pam python3-pyqt5 python3-pyqt5.qtsvg
+  python3-pyqt5.qtwebkit qml-module-org-kde-kquickcontrolsaddons qml-module-qtmultimedia
+  qml-module-qtquick2 rdate tasksel tasksel-data
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+--2022-10-09 18:05:07--  https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
+Resolving nvidia.box.com (nvidia.box.com)... 74.112.186.144
+Connecting to nvidia.box.com (nvidia.box.com)|74.112.186.144|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl [following]
+--2022-10-09 18:05:08--  https://nvidia.box.com/public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
+Reusing existing connection to nvidia.box.com:443.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://nvidia.app.box.com/public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl [following]
+--2022-10-09 18:05:08--  https://nvidia.app.box.com/public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
+Resolving nvidia.app.box.com (nvidia.app.box.com)... 74.112.186.144
+Connecting to nvidia.app.box.com (nvidia.app.box.com)|74.112.186.144|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://dl2.boxcloud.com/d/1/b1!lMwcq4W3GzZn37FqsAtzS8TiE0fMjndNDymWRkWO9ZppapJW-ySTYE35Oz9kYeFO_keUGE9u8X6cEeZRcG9W-IeyqH7Nm4fCiL5rEZj6eOkaoCWxlFbvg57EyLFQFy6nUhrLr1pnrPKFGwwFnoHtKK4o9iS3lrCfq-vypee1xRvntRqWNl8W3oC3wyzVfnjTKWkl8cBPhiUyxHLw5LpUnKWKtD05zD9DSH-tSy4jlBQQxZ12G2LkJlVeu4LmdM790y4wRauX439kr4J9CLjE96VILFXgYZIPMB3q55Obz1Tg6m4jRe_53-IW3LwJnSYiFgNSP93ifMFCXHxZP44exYE4fkPuFlKSe5GX1rSooIwEiIjTCDD7o230yYsDT-Nm17cp7JCyesrnaDiH7KXH1H5LXNM9a268qbpRQnl42b-OMn7lvyVF8V9MW4c9x6UZlvGM_61sg0JNA_aHrrsADnXDSHLPIEHwL0A2-mQL_WxI38yjDpKezaxTzReVFKDzly-9YL0XvusDycQ4YeWEpkOezjeEvC6c9GnywLHxlrPnY0Nx7q7lnw3DxMISKuyNsH4ZHbyAWSExLPuVYn7dYyM3Vk6KNRqeBfuf4g0uTHTQEy0zYgRwAQxlvGUdFSQiIzD35yzpBodsJjMBHlqTXOIq77cEEpLylLgx00BEzSxCbO6uQGMzoxfqthkhZ0GrH8XPbf2c-R9dphuIgEAUZ3g6IpZqmiNiAPZdQXXwqPwFZhPBJ8ZS0IJ0aatqiQoGACGgBvKeA-WXE1FuABmJaOo-4Ww-BgiOqZ77v7e77zKjJkuFLuq49Z1Mm5qbKVcZdXpv9d6EnL1X6CU_2--fgQ5l35-3A5ouZ36gcjN8L118XelIEnIcAxWtq2CS8udR_Po3bs7HkVlwmp0p7cTGlMrXpxT3yaxyy77MeHK1OzKzd7m43rawVQy03zf7zUn70oMQSKZa_AzKh2TgxCd4SaVVpOVufgLHko3NLa3Gd8c2qhDAyOY5W80WBECuL6zZqD_Z_hCjnEbTuFohZnEfw4AylMvV1GUOcV1haxTvZk2jGwMjQ9uHGcCYPKK2bdefOJ5mPLWGp9iNoxi95OvtYpzu-vLjxzij9thux_fvCuDnZRwJtR5nBCLXHMP7wuFebUaYSIQD0PNdDjr93a_1rwZGryN6BJFjx9KcL1QMFFC5L0MNvlpy04iNImuRE_vMUGkoUbpsN_15-lYKLgk4sT7p2-2dgvY9t3XG_3NrC3I-ZQ34bF1ztqQSaX5_yliQZtaGnY_EQQ_UFHTL3y3ZP9ryBhncuLvGOgeVZBlVFNyjy7taAcGkstkQkNp4ff8WcnCg-Q_N1-DktiWliI73mHv1NcZUF6LSOrx7St7uRIoFkk9PTxdTLGpk9_M9zPY2IWGD4nYsy47Q3KbiimUNG1qOYDKWnNkgGbtByN76eGdKV6enr-icufQJs3oF/download [following]
+--2022-10-09 18:05:09--  https://dl2.boxcloud.com/d/1/b1!lMwcq4W3GzZn37FqsAtzS8TiE0fMjndNDymWRkWO9ZppapJW-ySTYE35Oz9kYeFO_keUGE9u8X6cEeZRcG9W-IeyqH7Nm4fCiL5rEZj6eOkaoCWxlFbvg57EyLFQFy6nUhrLr1pnrPKFGwwFnoHtKK4o9iS3lrCfq-vypee1xRvntRqWNl8W3oC3wyzVfnjTKWkl8cBPhiUyxHLw5LpUnKWKtD05zD9DSH-tSy4jlBQQxZ12G2LkJlVeu4LmdM790y4wRauX439kr4J9CLjE96VILFXgYZIPMB3q55Obz1Tg6m4jRe_53-IW3LwJnSYiFgNSP93ifMFCXHxZP44exYE4fkPuFlKSe5GX1rSooIwEiIjTCDD7o230yYsDT-Nm17cp7JCyesrnaDiH7KXH1H5LXNM9a268qbpRQnl42b-OMn7lvyVF8V9MW4c9x6UZlvGM_61sg0JNA_aHrrsADnXDSHLPIEHwL0A2-mQL_WxI38yjDpKezaxTzReVFKDzly-9YL0XvusDycQ4YeWEpkOezjeEvC6c9GnywLHxlrPnY0Nx7q7lnw3DxMISKuyNsH4ZHbyAWSExLPuVYn7dYyM3Vk6KNRqeBfuf4g0uTHTQEy0zYgRwAQxlvGUdFSQiIzD35yzpBodsJjMBHlqTXOIq77cEEpLylLgx00BEzSxCbO6uQGMzoxfqthkhZ0GrH8XPbf2c-R9dphuIgEAUZ3g6IpZqmiNiAPZdQXXwqPwFZhPBJ8ZS0IJ0aatqiQoGACGgBvKeA-WXE1FuABmJaOo-4Ww-BgiOqZ77v7e77zKjJkuFLuq49Z1Mm5qbKVcZdXpv9d6EnL1X6CU_2--fgQ5l35-3A5ouZ36gcjN8L118XelIEnIcAxWtq2CS8udR_Po3bs7HkVlwmp0p7cTGlMrXpxT3yaxyy77MeHK1OzKzd7m43rawVQy03zf7zUn70oMQSKZa_AzKh2TgxCd4SaVVpOVufgLHko3NLa3Gd8c2qhDAyOY5W80WBECuL6zZqD_Z_hCjnEbTuFohZnEfw4AylMvV1GUOcV1haxTvZk2jGwMjQ9uHGcCYPKK2bdefOJ5mPLWGp9iNoxi95OvtYpzu-vLjxzij9thux_fvCuDnZRwJtR5nBCLXHMP7wuFebUaYSIQD0PNdDjr93a_1rwZGryN6BJFjx9KcL1QMFFC5L0MNvlpy04iNImuRE_vMUGkoUbpsN_15-lYKLgk4sT7p2-2dgvY9t3XG_3NrC3I-ZQ34bF1ztqQSaX5_yliQZtaGnY_EQQ_UFHTL3y3ZP9ryBhncuLvGOgeVZBlVFNyjy7taAcGkstkQkNp4ff8WcnCg-Q_N1-DktiWliI73mHv1NcZUF6LSOrx7St7uRIoFkk9PTxdTLGpk9_M9zPY2IWGD4nYsy47Q3KbiimUNG1qOYDKWnNkgGbtByN76eGdKV6enr-icufQJs3oF/download
+Resolving dl2.boxcloud.com (dl2.boxcloud.com)... 74.112.186.128
+Connecting to dl2.boxcloud.com (dl2.boxcloud.com)|74.112.186.128|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 290193522 (277M) [application/octet-stream]
+Saving to: ‘p57jwntv436lfrd78inwl7iml6p13fzh.whl’
+
+p57jwntv436lfrd78inwl7iml 100%[==================================>] 276,75M  20,4MB/s    in 14s     
+
+2022-10-09 18:05:23 (20,0 MB/s) - ‘p57jwntv436lfrd78inwl7iml6p13fzh.whl’ saved [290193522/290193522]
+
+ERROR: torch-1.8.0-cp36-cp36m-linux_aarch64.whl is not a supported wheel on this platform.
+fatal: destination path 'torchvision' already exists and is not an empty directory.
+Traceback (most recent call last):
+  File "setup.py", line 12, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+Obtaining file:///home/rainer/projects/donkeycar
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: numpy in /home/rainer/env/lib/python3.7/site-packages (from donkeycar==4.3.22) (1.21.6)
+Collecting pillow
+  Downloading Pillow-9.2.0-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (3.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 6.3 MB/s eta 0:00:00
+Collecting docopt
+  Using cached docopt-0.6.2.tar.gz (25 kB)
+  Preparing metadata (setup.py) ... done
+Collecting tornado
+  Downloading tornado-6.2-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (424 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 424.4/424.4 kB 6.4 MB/s eta 0:00:00
+Requirement already satisfied: requests in /home/rainer/env/lib/python3.7/site-packages (from donkeycar==4.3.22) (2.24.0)
+Requirement already satisfied: h5py in /home/rainer/env/lib/python3.7/site-packages (from donkeycar==4.3.22) (3.1.0)
+Collecting PrettyTable
+  Downloading prettytable-3.4.1-py3-none-any.whl (26 kB)
+Collecting paho-mqtt
+  Using cached paho-mqtt-1.6.1.tar.gz (99 kB)
+  Preparing metadata (setup.py) ... done
+Collecting simple_pid
+  Using cached simple_pid-1.0.1-py2.py3-none-any.whl (8.1 kB)
+Collecting progress
+  Using cached progress-1.6.tar.gz (7.8 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: typing_extensions in /home/rainer/.pyenv/versions/3.7.14/lib/python3.7/site-packages (from donkeycar==4.3.22) (4.4.0)
+Collecting pyfiglet
+  Using cached pyfiglet-0.8.post1-py2.py3-none-any.whl (865 kB)
+Requirement already satisfied: psutil in /home/rainer/env/lib/python3.7/site-packages (from donkeycar==4.3.22) (5.7.2)
+Collecting pynmea2
+  Using cached pynmea2-1.18.0-py3-none-any.whl (29 kB)
+Requirement already satisfied: pyserial in /home/rainer/env/lib/python3.7/site-packages (from donkeycar==4.3.22) (3.5)
+Collecting utm
+  Using cached utm-0.7.0.tar.gz (8.7 kB)
+  Preparing metadata (setup.py) ... done
+Collecting Adafruit_PCA9685
+  Using cached Adafruit_PCA9685-1.0.1.tar.gz (3.0 kB)
+  Preparing metadata (setup.py) ... done
+Collecting adafruit-circuitpython-lis3dh
+  Using cached adafruit_circuitpython_lis3dh-5.1.18-py3-none-any.whl (8.2 kB)
+Collecting adafruit-circuitpython-ssd1306
+  Using cached adafruit_circuitpython_ssd1306-2.12.10-py3-none-any.whl (7.6 kB)
+Collecting adafruit-circuitpython-rplidar
+  Using cached adafruit_circuitpython_rplidar-1.2.10-py3-none-any.whl (9.3 kB)
+Collecting Jetson.GPIO
+  Downloading Jetson.GPIO-2.0.20.tar.gz (25 kB)
+  Preparing metadata (setup.py) ... done
+Collecting adafruit-circuitpython-busdevice
+  Using cached adafruit_circuitpython_busdevice-5.2.3-py3-none-any.whl (7.4 kB)
+Collecting Adafruit-Blinka
+  Downloading Adafruit_Blinka-8.5.0-py3-none-any.whl (265 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 265.9/265.9 kB 5.2 MB/s eta 0:00:00
+Collecting adafruit-circuitpython-register
+  Using cached adafruit_circuitpython_register-1.9.14-py3-none-any.whl (14 kB)
+Collecting adafruit-circuitpython-framebuf
+  Using cached adafruit_circuitpython_framebuf-1.4.14-py3-none-any.whl (8.6 kB)
+Collecting Adafruit-GPIO>=0.6.5
+  Using cached Adafruit_GPIO-1.0.3.tar.gz (24 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: cached-property in /home/rainer/env/lib/python3.7/site-packages (from h5py->donkeycar==4.3.22) (1.5.2)
+Collecting wcwidth
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Requirement already satisfied: importlib-metadata in /home/rainer/.pyenv/versions/3.7.14/lib/python3.7/site-packages (from PrettyTable->donkeycar==4.3.22) (5.0.0)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /home/rainer/env/lib/python3.7/site-packages (from requests->donkeycar==4.3.22) (1.25.11)
+Requirement already satisfied: chardet<4,>=3.0.2 in /home/rainer/env/lib/python3.7/site-packages (from requests->donkeycar==4.3.22) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /home/rainer/env/lib/python3.7/site-packages (from requests->donkeycar==4.3.22) (2022.9.24)
+Requirement already satisfied: idna<3,>=2.5 in /home/rainer/env/lib/python3.7/site-packages (from requests->donkeycar==4.3.22) (2.10)
+Collecting adafruit-pureio
+  Using cached Adafruit_PureIO-1.1.9.tar.gz (26 kB)
+  Preparing metadata (setup.py) ... done
+Collecting spidev
+  Using cached spidev-3.5.tar.gz (10 kB)
+  Preparing metadata (setup.py) ... done
+Collecting pyftdi>=0.40.0
+  Downloading pyftdi-0.54.0-py3-none-any.whl (144 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.8/144.8 kB 2.8 MB/s eta 0:00:00
+Collecting Adafruit-PlatformDetect>=3.13.0
+  Downloading Adafruit-PlatformDetect-3.31.0.tar.gz (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.1/41.1 kB 696.8 kB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting adafruit-circuitpython-typing
+  Using cached adafruit_circuitpython_typing-1.8.2-py3-none-any.whl (9.7 kB)
+Requirement already satisfied: zipp>=0.5 in /home/rainer/.pyenv/versions/3.7.14/lib/python3.7/site-packages (from importlib-metadata->PrettyTable->donkeycar==4.3.22) (3.9.0)
+Collecting adafruit-circuitpython-requests
+  Using cached adafruit_circuitpython_requests-1.12.8-py3-none-any.whl (10 kB)
+Collecting pyusb!=1.2.0,>=1.0.0
+  Using cached pyusb-1.2.1-py3-none-any.whl (58 kB)
+Building wheels for collected packages: Adafruit_PCA9685, docopt, Jetson.GPIO, paho-mqtt, progress, utm, Adafruit-GPIO, Adafruit-PlatformDetect, adafruit-pureio, spidev
+  Building wheel for Adafruit_PCA9685 (setup.py) ... done
+  Created wheel for Adafruit_PCA9685: filename=Adafruit_PCA9685-1.0.1-py3-none-any.whl size=3772 sha256=da4e71a9fc04a4d40a5143f405e386d118ffe13c28a88d9c503726a919bdf83d
+  Stored in directory: /home/rainer/.cache/pip/wheels/53/c2/bf/011463adc5172ce06193b33482919d0e8d614370fa3aa2a482
+  Building wheel for docopt (setup.py) ... done
+  Created wheel for docopt: filename=docopt-0.6.2-py2.py3-none-any.whl size=13704 sha256=d6badc04fc18227f5ffa7a37447895be46608a766e3358b92f8b683be35eb615
+  Stored in directory: /home/rainer/.cache/pip/wheels/72/b0/3f/1d95f96ff986c7dfffe46ce2be4062f38ebd04b506c77c81b9
+  Building wheel for Jetson.GPIO (setup.py) ... done
+  Created wheel for Jetson.GPIO: filename=Jetson.GPIO-2.0.20-py3-none-any.whl size=24883 sha256=5532c6e77d310b1bd8326c6d02574f0f0bb0fbce1ae945c96a56c913fdc41833
+  Stored in directory: /home/rainer/.cache/pip/wheels/37/2f/63/ebfb139a47e1b7f22b6409a1a39ad7787e3ed3a1da1cfbe774
+  Building wheel for paho-mqtt (setup.py) ... done
+  Created wheel for paho-mqtt: filename=paho_mqtt-1.6.1-py3-none-any.whl size=62115 sha256=5c39b416d75a83775e4d1237a7853d8758c2daaca37ca8edaeba97337744bbdc
+  Stored in directory: /home/rainer/.cache/pip/wheels/d0/bf/ac/2b3f43f8c6fcd0f4ba5395397458c521eb0b52d33b574a5a40
+  Building wheel for progress (setup.py) ... done
+  Created wheel for progress: filename=progress-1.6-py3-none-any.whl size=9616 sha256=2bb29fc157f274287d7e412011d115df7d867f18f75fa74f55aaa2e2e1853665
+  Stored in directory: /home/rainer/.cache/pip/wheels/8e/d7/61/498d8e27dc11e9805b01eb3539e2ee344436fc226daeb5fe87
+  Building wheel for utm (setup.py) ... done
+  Created wheel for utm: filename=utm-0.7.0-py3-none-any.whl size=6094 sha256=fca7b86cad9b134bd8cb0981999e3bd70797b83fd19bc110acf82d660d4bc40e
+  Stored in directory: /home/rainer/.cache/pip/wheels/a5/b0/12/7ee4fdb0f9fbb4157100bd02390436ed5d58ebfd3c6d6a0886
+  Building wheel for Adafruit-GPIO (setup.py) ... done
+  Created wheel for Adafruit-GPIO: filename=Adafruit_GPIO-1.0.3-py3-none-any.whl size=38137 sha256=a4c1624763e4e297b45b6cf62c9a38ba590b26b4c0c46177c10fc6f48eef8362
+  Stored in directory: /home/rainer/.cache/pip/wheels/3b/3d/85/750be7c4530e3d9c58a7bb2eaff89dcc9c3c87706bf4f09772
+  Building wheel for Adafruit-PlatformDetect (setup.py) ... done
+  Created wheel for Adafruit-PlatformDetect: filename=Adafruit_PlatformDetect-3.31.0-py3-none-any.whl size=19370 sha256=492d8fa5beaca32f3686600a7c576ca688e7013874eece260ed42d3808e35ba1
+  Stored in directory: /home/rainer/.cache/pip/wheels/c0/3e/75/2189a98eea0f7f56173cf19baf16f1e0497da984a9dfd5fbe9
+  Building wheel for adafruit-pureio (setup.py) ... done
+  Created wheel for adafruit-pureio: filename=Adafruit_PureIO-1.1.9-py3-none-any.whl size=11588 sha256=0a8019daf17530fec1824c2068a5cfdcd6fdbc54a155686d24946cb3ce4b3827
+  Stored in directory: /home/rainer/.cache/pip/wheels/ef/18/db/eacd50ea287f33304742bb67c47997a31d8894159c51132075
+  Building wheel for spidev (setup.py) ... done
+  Created wheel for spidev: filename=spidev-3.5-cp37-cp37m-linux_aarch64.whl size=41506 sha256=0de5ec21bb5e8575e51fce27578c601017e1d03d678cebd718302248a43c8048
+  Stored in directory: /home/rainer/.cache/pip/wheels/59/42/56/7239d001df7a420a8502ec12074e8b9abd24af88595f3ac250
+Successfully built Adafruit_PCA9685 docopt Jetson.GPIO paho-mqtt progress utm Adafruit-GPIO Adafruit-PlatformDetect adafruit-pureio spidev
+Installing collected packages: wcwidth, utm, spidev, simple_pid, pynmea2, pyfiglet, progress, paho-mqtt, Jetson.GPIO, docopt, tornado, pyusb, pillow, adafruit-pureio, Adafruit-PlatformDetect, pyftdi, PrettyTable, Adafruit-GPIO, donkeycar, Adafruit_PCA9685, adafruit-circuitpython-requests, Adafruit-Blinka, adafruit-circuitpython-typing, adafruit-circuitpython-busdevice, adafruit-circuitpython-register, adafruit-circuitpython-framebuf, adafruit-circuitpython-ssd1306, adafruit-circuitpython-rplidar, adafruit-circuitpython-lis3dh
+  Running setup.py develop for donkeycar
+Successfully installed Adafruit-Blinka-8.5.0 Adafruit-GPIO-1.0.3 Adafruit-PlatformDetect-3.31.0 Adafruit_PCA9685-1.0.1 Jetson.GPIO-2.0.20 PrettyTable-3.4.1 adafruit-circuitpython-busdevice-5.2.3 adafruit-circuitpython-framebuf-1.4.14 adafruit-circuitpython-lis3dh-5.1.18 adafruit-circuitpython-register-1.9.14 adafruit-circuitpython-requests-1.12.8 adafruit-circuitpython-rplidar-1.2.10 adafruit-circuitpython-ssd1306-2.12.10 adafruit-circuitpython-typing-1.8.2 adafruit-pureio-1.1.9 docopt-0.6.2 donkeycar paho-mqtt-1.6.1 pillow-9.2.0 progress-1.6 pyfiglet-0.8.post1 pyftdi-0.54.0 pynmea2-1.18.0 pyusb-1.2.1 simple_pid-1.0.1 spidev-3.5 tornado-6.2 utm-0.7.0 wcwidth-0.2.5
+To activate the donkey environment: 'source ~/env/bin/activate'
+rainer@donkeynano46:~/projects/donkeycar$ 
+
+
+# testing versions
+
+(env) rainer@donkeynano46:~$ python
+Python 3.7.14 (default, Oct  9 2022, 16:18:26) 
+[GCC 7.5.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+/home/rainer/env/lib/python3.7/site-packages/tensorflow_io/python/ops/__init__.py:98: UserWarning: unable to load libtensorflow_io_plugins.so: unable to open file: libtensorflow_io_plugins.so, from paths: ['/home/rainer/env/lib/python3.7/site-packages/tensorflow_io/python/ops/libtensorflow_io_plugins.so']
+caused by: ["[Errno 2] The file to load file system plugin from does not exist.: '/home/rainer/env/lib/python3.7/site-packages/tensorflow_io/python/ops/libtensorflow_io_plugins.so'"]
+  warnings.warn(f"unable to load libtensorflow_io_plugins.so: {e}")
+/home/rainer/env/lib/python3.7/site-packages/tensorflow_io/python/ops/__init__.py:104: UserWarning: file system plugins are not loaded: unable to open file: libtensorflow_io.so, from paths: ['/home/rainer/env/lib/python3.7/site-packages/tensorflow_io/python/ops/libtensorflow_io.so']
+caused by: ['/home/rainer/env/lib/python3.7/site-packages/tensorflow_io/python/ops/libtensorflow_io.so: cannot open shared object file: No such file or directory']
+  warnings.warn(f"file system plugins are not loaded: {e}")
+>>> tf.__version__
+'2.10.0'
+
+(env) rainer@donkeynano46:~$ python
+Python 3.7.14 (default, Oct  9 2022, 16:18:26) 
+[GCC 7.5.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2  
+>>> cv2.__version__
+'4.6.0'
+>>> 
+
+(env) rainer@donkeynano46:~$ donkey
+________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
+
+using donkey v4.3.22 ...
+Usage: The available commands are:
+['createcar', 'findcar', 'calibrate', 'tubclean', 'tubplot', 'tubhist', 'makemovie', 'createjs', 'cnnactivations', 'update', 'train', 'models', 'ui']
+
+(env) rainer@donkeynano46:~$ donkey createcar --path ~/mycar
+________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
+
+using donkey v4.3.22 ...
+Creating car folder: /home/rainer/mycar
+making dir  /home/rainer/mycar
+Creating data & model folders.
+making dir  /home/rainer/mycar/models
+making dir  /home/rainer/mycar/data
+making dir  /home/rainer/mycar/logs
+Copying car application template: complete
+Copying car config defaults. Adjust these before starting your car.
+Copying train script. Adjust these before starting your car.
+Copying calibrate script. Adjust these before starting your car.
+Copying my car config overrides
+Donkey setup complete.
+
+

@@ -1,0 +1,23 @@
+# install https://github.com/pyenv/pyenv to use python 3.7.x
+cd ~/projects/pyenv 
+sudo apt-get install curl
+
+curl https://pyenv.run | bash
+# add path variables (from output) to .bashrc
+pyenv update
+pyenv install 3.7.14
+
+# use python 3.7.14 globally
+pyenv global 3.7.14
+
+# reinstall
+cd ~/projects/donkeycar 
+./install/reproducing-Eds-script/install-jp46.sh 
+
+# reinstall opencv-python
+pip install opencv-python
+
+# fix tensorflow complaining about missing tensorflow-io
+pip install tensorflow-io
+
+
