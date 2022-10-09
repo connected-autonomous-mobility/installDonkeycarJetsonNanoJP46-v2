@@ -1,0 +1,134 @@
+rainer@donkeynano46:~/projects/donkeycar$ source env/bin/activate
+bash: env/bin/activate: No such file or directory
+rainer@donkeynano46:~/projects/donkeycar$ cd
+rainer@donkeynano46:~$ source env/bin/activate
+(env) rainer@donkeynano46:~$ python -V
+Python 3.6.9
+(env) rainer@donkeynano46:~$ python
+Python 3.6.9 (default, Jun 29 2022, 11:45:57) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+2022-10-09 15:46:10.562011: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.10.2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/__init__.py", line 55, in <module>
+    from ._api.v2 import compat
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/__init__.py", line 39, in <module>
+    from . import v1
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/v1/__init__.py", line 34, in <module>
+    from . import compat
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/v1/compat/__init__.py", line 39, in <module>
+    from . import v1
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/_api/v2/compat/v1/compat/v1/__init__.py", line 693, in <module>
+    from tensorflow.python.keras.api._v1 import keras
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/__init__.py", line 10, in <module>
+    from . import keras
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/keras/__init__.py", line 19, in <module>
+    from . import datasets
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/keras/datasets/__init__.py", line 14, in <module>
+    from . import imdb
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/api/keras/datasets/imdb/__init__.py", line 10, in <module>
+    from tensorflow.python.keras.datasets.imdb import get_word_index
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/datasets/imdb.py", line 21, in <module>
+    from tensorflow.python.keras.preprocessing.sequence import _remove_long_seq
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/preprocessing/__init__.py", line 22, in <module>
+    from tensorflow.python.keras.preprocessing import image
+  File "/home/rainer/env/lib/python3.6/site-packages/tensorflow/python/keras/preprocessing/image.py", line 20, in <module>
+    from keras_preprocessing import image
+  File "/home/rainer/env/lib/python3.6/site-packages/keras_preprocessing/image/__init__.py", line 5, in <module>
+    from .affine_transformations import *
+  File "/home/rainer/env/lib/python3.6/site-packages/keras_preprocessing/image/affine_transformations.py", line 9, in <module>
+    from .utils import (array_to_img,
+  File "/home/rainer/env/lib/python3.6/site-packages/keras_preprocessing/image/utils.py", line 14, in <module>
+    from PIL import ImageEnhance
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/ImageEnhance.py", line 21, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/Image.py", line 52, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1131, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1112, in _legacy_get_spec
+  File "<frozen importlib._bootstrap>", line 441, in spec_from_loader
+  File "<frozen importlib._bootstrap_external>", line 544, in spec_from_file_location
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/_deprecate.py", line 1
+SyntaxError: future feature annotations is not defined
+>>> tf.__version__
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tf' is not defined
+>>> import cv2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python3.6/dist-packages/cv2/__init__.py", line 89, in <module>
+    bootstrap()
+  File "/usr/lib/python3.6/dist-packages/cv2/__init__.py", line 79, in bootstrap
+    import cv2
+ImportError: /usr/lib/aarch64-linux-gnu/libgomp.so.1: cannot allocate memory in static TLS block
+>>> cv2.__version__
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cv2' is not defined
+>>> 
+
+(env) rainer@donkeynano46:~$ donkey
+________             ______                   _________              
+___  __ \_______________  /___________  __    __  ____/_____ ________
+__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
+_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
+/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
+                                 /____/                              
+
+using donkey v4.3.22 ...
+Traceback (most recent call last):
+  File "/home/rainer/env/bin/donkey", line 33, in <module>
+    sys.exit(load_entry_point('donkeycar', 'console_scripts', 'donkey')())
+  File "/home/rainer/env/bin/donkey", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/home/rainer/.local/lib/python3.6/site-packages/importlib_metadata/__init__.py", line 194, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rainer/projects/donkeycar/donkeycar/__init__.py", line 26, in <module>
+    from . import utils
+  File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 22, in <module>
+    from PIL import Image
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 656, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 626, in _load_backward_compatible
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/Image.py", line 52, in <module>
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1131, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1112, in _legacy_get_spec
+  File "<frozen importlib._bootstrap>", line 441, in spec_from_loader
+  File "<frozen importlib._bootstrap_external>", line 544, in spec_from_file_location
+  File "/home/rainer/env/lib/python3.6/site-packages/Pillow-9.2.0-py3.6-linux-aarch64.egg/PIL/_deprecate.py", line 1
+SyntaxError: future feature annotations is not defined
+
