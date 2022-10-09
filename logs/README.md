@@ -16,6 +16,9 @@ possible fix: use python 3.7.x
 link: https://stackoverflow.com/questions/52889746/cant-import-annotations-from-future
 
 ## 2 python 3.7.14 using pyenv, Oct. 9th 2022
-error: CSI & WEBCAM cameras do not work
+error: 
+```
+CSI & WEBCAM cameras do not work
+```
 possible fix: check which version of tensorflow, OpenCV, JP works together
 link: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html
