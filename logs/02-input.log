@@ -20,4 +20,17 @@ pip install opencv-python
 # fix tensorflow complaining about missing tensorflow-io
 pip install tensorflow-io
 
+# install VSCode
+git clone https://github.com/JetsonHacksNano/installVSCode.git
+cd installVSCode
+./installVSCodeWithPython.sh
+
+# install pygame for using WEBCAM
+pip install pygame
+
+# install python 3.6.9 in env to test for working with cameras
+(env) rainer@donkeynano46:~/projects/CSI-Camera$ pyenv install 3.6.9
+
+
+
 

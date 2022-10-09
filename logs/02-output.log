@@ -1556,3 +1556,31 @@ Copying my car config overrides
 Donkey setup complete.
 
 
+
+rainer@donkeynano46:~/projects/installDonkeycarJetsonNanoJP46-v2/logs$ python
+Python 2.7.17 (default, Jul  1 2022, 15:56:32) 
+[GCC 7.5.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2
+>>> cv2.__version__
+'4.1.1'
+>>> quit()
+rainer@donkeynano46:~/projects/installDonkeycarJetsonNanoJP46-v2/logs$ python3
+Python 3.6.9 (default, Jun 29 2022, 11:45:57) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2
+>>> cv2.__version__
+'4.1.1'
+
+BUT
+
+(env) rainer@donkeynano46:~/projects/CSI-Camera$ python 
+Python 3.7.14 (default, Oct  9 2022, 16:18:26) 
+[GCC 7.5.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import cv2
+>>> cv2.__version__ 
+'4.6.0'
+
+
