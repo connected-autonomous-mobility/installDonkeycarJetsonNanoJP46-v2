@@ -23,4 +23,14 @@ CSI & WEBCAM cameras do not work
 - link: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html
 
 ## 03 tbd
-- pip install opencv-python== get possible versions
+- pip install opencv-python== 
+- [get possible OpenCV versions](https://stackoverflow.com/questions/44439443/python-how-to-pip-install-opencv2-with-specific-version-2-4-9#44439955)
+- Easy and simple
+
+Prerequisites
+pip install matplotlib
+pip install numpy
+Final step
+pip install opencv-python
+Specific version * Final step * opencv-python==2.4.9
+
