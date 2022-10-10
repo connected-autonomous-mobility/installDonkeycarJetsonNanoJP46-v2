@@ -4,10 +4,17 @@ instruction for installation of  donkeycar.com on a Jetson Nano JP 4.6 - version
 - using [Ed's install script](https://github.com/autorope/donkeycar/tree/990-jetson-nano-install-script)
 - see the [logs](logs) for details of the input, output, errors of the trials 
 
-# Desired Software versions
+## JP 4.6 Software versions
+- virtualenv 20.14.1
+- python 3.7.13
+- OpenCV 4.6.0
+- tensorflow (see TCIII list)
+
+
+## Desired Software versions
 *"We would optimally use python 3.7 and TF 2.2.0. If we can only have a newer version of TF, then this might be fine, too."*
 
-# Checks
+## Checks
 - [x] installation incl. Ed's script without errors
 - [ ] CSI camera
 - [ ] usb camera
