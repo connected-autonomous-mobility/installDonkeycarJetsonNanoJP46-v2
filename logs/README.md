@@ -21,3 +21,6 @@ CSI & WEBCAM cameras do not work
 ```
 - possible fix: check which version of tensorflow, OpenCV, JP works together
 - link: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html
+
+## 03 tbd
+- pip install opencv-python== get possible versions
