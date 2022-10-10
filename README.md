@@ -5,9 +5,9 @@ instruction for installation of  donkeycar.com on a Jetson Nano JP 4.6 - version
 - see the [logs](logs) for details of the input, output, errors of the trials 
 
 ## JP 4.6 Software versions
-- virtualenv 20.14.1
-- python 3.7.13
-- OpenCV 4.6.0
+- virtualenv 20.14.1?
+- python 3.6.9
+- OpenCV 4.1.0
 - tensorflow (see TCIII list)
 
 
