@@ -11,4 +11,4 @@ instruction for installation of  donkeycar.com on a Jetson Nano JP 4.6 - version
 - CSI camera
 - usb camera
 - donkey drive & train
-- run prepared models ([models trained w/ tf 2.2 will work by using any of the models in ](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
+- run prepared [models trained w/ tf 2.2 will work by using any of the models in ](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
