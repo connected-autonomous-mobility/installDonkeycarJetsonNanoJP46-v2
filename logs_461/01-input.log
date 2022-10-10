@@ -1,0 +1,34 @@
+# rainer@donkeynano46
+
+# login to to github on browser
+
+# install github cli
+# goto https://github.com/cli/cli/releases/tag/v2.17.0
+sudo apt-get install ./gh_2.17.0_linux_arm64.deb
+
+# get donkeycar
+git clone https://github.com/autorope/donkeycar
+
+# versions
+rainer@donkeynano46:~$ python -V
+Python 2.7.17
+rainer@donkeynano46:~$ python3 -V
+Python 3.6.9
+rainer@donkeynano46:~$ python
+Python 2.7.17 (default, Feb 27 2021, 15:10:58) 
+[GCC 7.5.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named tensorflow
+>>> import cv2
+>>> cv2.__version__
+'4.1.1'
+
+# run Ed's install script, bare, no venv!
+cd rainer@donkeynano46:
+cd ~/projects/donkeycar 
+./install/reproducing-Eds-script/install-jp461.sh 
+
+
