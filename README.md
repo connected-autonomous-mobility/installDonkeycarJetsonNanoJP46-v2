@@ -5,7 +5,7 @@ instruction for installation of  donkeycar.com on a Jetson Nano JP 4.6 - version
 - see the [logs](logs) for details of the input, output, errors of the trials 
 
 # Desired Software versions
-"We would optimally use python 3.7 and TF 2.2.0. If we can only have a newer version of TF, then this might be fine, too."
+*"We would optimally use python 3.7 and TF 2.2.0. If we can only have a newer version of TF, then this might be fine, too."*
 
 # Checks
 - [x] installation incl. Ed's script without errors
