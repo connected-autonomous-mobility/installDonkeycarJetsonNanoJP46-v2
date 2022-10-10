@@ -8,11 +8,10 @@ instruction for installation of  donkeycar.com on a Jetson Nano JP 4.6 - version
 - virtualenv 20.14.1?
 - python 3.6.9
 - OpenCV 4.1.0
-- tensorflow (see TCIII list)
-
 
 ## Desired Software versions
-*"We would optimally use python 3.7 and TF 2.2.0. If we can only have a newer version of TF, then this might be fine, too."*
+- python 3.7 
+- tensorflow >=2.2.0 (see TCIII list](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html)
 
 ## Checks
 - [x] installation incl. Ed's script without errors
