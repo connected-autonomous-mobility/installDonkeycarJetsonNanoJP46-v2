@@ -1,0 +1,32 @@
+# install pip
+sudo apt-get update && sudo apt-get install python-pip python3-pip
+
+# install jetson-stats
+sudo -H pip install -U jetson-stats
+
+# OpenCV fix?
+rainer@donkeynano46:~$ pip install opencv-contrib-python
+
+# uninstall existing tensorflow
+sudo pip3 uninstall -y tensorflow
+sudo pip3 uninstall -y tensorflow-gpu
+
+# https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html
+# install tensorflow 2.6.2 compatible with JP46
+JP_VERSION=46
+TF_VERSION=2.6.2
+NV_VERSION=21.12
+sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION tensorflow==$TF_VERSION+nv$NV_VERSION
+
+# install tensorflow 2.6.0 compatible with JP46
+JP_VERSION=46
+TF_VERSION=2.6.0
+NV_VERSION=21.09
+sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION tensorflow==$TF_VERSION+nv$NV_VERSION
+
+# install tensorflow 2.5.0 compatible with JP46
+JP_VERSION=46
+TF_VERSION=2.5.0
+NV_VERSION=21.07
+sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION tensorflow==$TF_VERSION+nv$NV_VERSION
+

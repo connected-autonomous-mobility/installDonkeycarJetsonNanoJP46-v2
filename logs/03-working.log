@@ -1,0 +1,8 @@
+# https://developer.nvidia.com/embedded/learn/tutorials/first-picture-csi-usb-cameras
+
+# usb cameras works
+nvgstcapture-1.0 --camsrc=0 --cap-dev-node=1
+
+# CSI camera works
+nvgstcapture-1.0
+

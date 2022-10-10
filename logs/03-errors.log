@@ -1,0 +1,21 @@
+(env) rainer@donkeynano46:~/projects/installDonkeycarJetsonNanoJP46-v2/tests$ sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION tensorflow==$TF_VERSION+nv$NV_VERSION
+[sudo] password for rainer: 
+The directory '/home/rainer/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/rainer/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting tensorflow==2.6.2+nv21.12
+  Downloading https://developer.download.nvidia.com/compute/redist/jp/v46/tensorflow/tensorflow-2.6.2+nv21.12-cp36-cp36m-linux_aarch64.whl (317.1MB)
+    100% |████████████████████████████████| 317.1MB 874bytes/s 
+Collecting protobuf>=3.9.2 (from tensorflow==2.6.2+nv21.12)
+  Downloading https://files.pythonhosted.org/packages/6c/be/4e32d02bf08b8f76bf6e59f2a531690c1e4264530404501f3489ca975d9a/protobuf-4.21.0-py2.py3-none-any.whl (164kB)
+    100% |████████████████████████████████| 174kB 1.2MB/s 
+protobuf requires Python '>=3.7' but the running Python is 3.6.9
+
+
+# tensorflow requires python 3.6.x !!!
+(env) rainer@donkeynano46:~/projects/installDonkeycarJetsonNanoJP46-v2/tests$ sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v$JP_VERSION tensorflow==$TF_VERSION+nv$NV_VERSION
+
+The directory '/home/rainer/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/rainer/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting tensorflow==2.5.0+nv21.07
+  Downloading https://developer.download.nvidia.com/compute/redist/jp/v46/tensorflow/tensorflow-2.5.0+nv21.7-cp36-cp36m-linux_aarch64.whl (313.5MB)
+
