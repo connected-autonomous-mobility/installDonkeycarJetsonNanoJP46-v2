@@ -1,0 +1,26 @@
+# https://github.com/naisy/Docker.git
+# follow instruction under ~/github/Docker/notebooks/donkeycar/01.build_from_clean_sdcard.ipynb
+# given here:
+
+
+# Download docker run script
+mkdir ~/github
+cd ~/github
+git clone https://github.com/naisy/Docker
+
+# Launch docker
+cd ~/github/Docker
+sudo su
+./run-jetson-jp461-donkeycar.sh
+
+# as root
+sudo su
+# check container id
+docker ps -a
+# login to docker container
+docker exec -it CONTAINER_ID /bin/bash
+
+# Create mycar
+donkey createcar --path=~/data/mycar
+
+
