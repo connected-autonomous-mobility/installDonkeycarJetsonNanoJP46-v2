@@ -1,7 +1,7 @@
 # Install donkeycar on Jetson Nano
 *SD card image n9, 128GB (internal use only, just ignore)*
 
-*docker images taken from [naisy](https://github.com/naisy/Docker), thx a lot for the amzing work!*
+    *docker images taken from [naisy](https://github.com/naisy/Docker), thx a lot for the amzing work!*
 
 
 ## 1 SD card image [JetPack 4.6.2](https://developer.nvidia.com/embedded/jetpack-sdk-462)
@@ -11,7 +11,7 @@
 - CUDA 10.2.300
 - TensorRT 8.2.1.8
 - cuDNN 8.2.1.32
-- tensorflow >=2.2.0 (see TCIII list](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html)
+- tensorflow >=2.2.0 [see TCIII list](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html)
 
 ## 2 Setup 
 *Actual Try: 3.2 naisy docker*
