@@ -1,7 +1,7 @@
 # Install donkeycar on Jetson Nano
 *SD card image n9, 128GB (internal use only, just ignore)*
 
-    *docker images taken from [naisy](https://github.com/naisy/Docker), thx a lot for the amzing work!*
+    *docker images taken from [naisy](https://github.com/naisy/Docker), thx a lot for the amazing work!*
 
 
 ## 1 SD card image [JetPack 4.6.2](https://developer.nvidia.com/embedded/jetpack-sdk-462)
