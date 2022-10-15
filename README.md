@@ -1,6 +1,7 @@
 # Install donkeycar on Jetson Nano
 *SD card image n9, 128GB (internal use only, just ignore)*
 
+*docker images taken from [naisy](https://github.com/naisy/Docker), thx a lot for the amzing work!*
 
 
 ## 1 SD card image [JetPack 4.6.2](https://developer.nvidia.com/embedded/jetpack-sdk-462)
@@ -29,3 +30,34 @@
 - [x] [run pretrained models trained w/ tf 2.2](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
     - [x] python manage.py drive --model=models/pilot_21-08-12_4.h5 --type=linear
     - [x] python manage.py drive --model=models/pilot_21-08-12_9.h5 --type=categorical
+
+## 4 Run
+- prepare image [JetPack 4.6.2](https://developer.nvidia.com/embedded/jetpack-sdk-462)
+- prepare docker & reboot
+    ```
+    sudo apt-get install -y docker-compose 
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    ```
+- run docker image
+    ```
+    cd Docker
+    ./run-jetson-jp461-donkeycar.sh*
+    ```
+- identify CONTAINER_ID
+    ```
+    docker ps -a
+    ```
+- login to docker container
+    ```
+    docker exec -it CONTAINER_ID /bin/bash
+    ```
+- create mycar
+    ```
+    donkey createcar --path=~/data/mycar
+    ```
+- run car (data will be persistant)
+    ```
+    cd ~/data/mycar
+    python manage.py drive
+    ```
