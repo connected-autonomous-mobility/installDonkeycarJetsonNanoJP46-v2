@@ -48,7 +48,7 @@
     ```
     docker ps -a
     ```
-- login to docker container
+- login to docker container [or open](http://127.0.0.1:8888/) pw: jupyter
     ```
     docker exec -it CONTAINER_ID /bin/bash
     ```
