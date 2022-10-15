@@ -31,7 +31,7 @@
     - [x] python manage.py drive --model=models/pilot_21-08-12_4.h5 --type=linear
     - [x] python manage.py drive --model=models/pilot_21-08-12_9.h5 --type=categorical
 
-## 4 Run
+## 4 Try yourself
 - prepare image [JetPack 4.6.2](https://developer.nvidia.com/embedded/jetpack-sdk-462)
 - prepare docker & reboot
     ```
