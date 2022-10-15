@@ -23,7 +23,7 @@
 - [x] installation
 - [x] CSI & usb camera
 - [x] donkey calibrate --channel 1/0 --bus 1
-- [ ] donkey ui, opens but shows [warning](./03-logs_naisydocker/02-error.log)
+- [x] donkey ui (tested TubManager, Trainer)
 - [x] driving: python manage.py drive 
 - [x] training: python train.py  --tub=data/tub_7_22-10-15/ --model=models/jp461_m1.h5
 - [x] [run pretrained models trained w/ tf 2.2](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
