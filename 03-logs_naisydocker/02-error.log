@@ -1,0 +1,24 @@
+# donkey ui
+
+[CRITICAL] [Cutbuffer   ] Unable to find any valuable Cutbuffer provider. Please enable debug logging (e.g. add -d if running from the command line, or change the log level in the config) and re-run your app to identify potential causes
+xclip - FileNotFoundError: [Errno 2] No such file or directory: 'xclip': 'xclip'
+  File "/virtualenv/python3/lib/python3.6/site-packages/kivy/core/__init__.py", line 62, in core_select_lib
+    fromlist=[modulename], level=0)
+  File "/virtualenv/python3/lib/python3.6/site-packages/kivy/core/clipboard/clipboard_xclip.py", line 18, in <module>
+    stderr=subprocess.DEVNULL)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+xsel - FileNotFoundError: [Errno 2] No such file or directory: 'xsel': 'xsel'
+  File "/virtualenv/python3/lib/python3.6/site-packages/kivy/core/__init__.py", line 62, in core_select_lib
+    fromlist=[modulename], level=0)
+  File "/virtualenv/python3/lib/python3.6/site-packages/kivy/core/clipboard/clipboard_xsel.py", line 16, in <module>
+    p = subprocess.Popen(['xsel'], stdout=subprocess.PIPE)
+  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
+    restore_signals, start_new_session)
+  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+

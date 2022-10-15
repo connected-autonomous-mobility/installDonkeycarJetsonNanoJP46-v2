@@ -1,11 +1,11 @@
-# 02-Logs461
+# 03-Logs461
 This directory contains the documentation of the sevaral installation trials NN:
 - NN-input.log
 - NN-output.log
 - NN-errors.log
 
 # Installation trials
--using: [Ed's install script](https://github.com/autorope/donkeycar/tree/990-jetson-nano-install-script)
+-using:[naisy docker] (https://github.com/naisy/Docker.git)
 
 ## 01 base installation WITHOUT virtualenv, Oct. 10th 2022
 - cameras csi & usb working
@@ -16,7 +16,8 @@ Default GPU Device: /device:GPU:0
 tensorflow version: 2.7.0
 ```
 
-# possible fix: check which version of tensorflow, OpenCV, JP works together
-- link: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html
 
 
+## 02 small updates
+- see [02-input.log](02-input.log)
+- errors [02-error.log](02-error.log)

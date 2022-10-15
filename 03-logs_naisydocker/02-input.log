@@ -1,0 +1,51 @@
+# https://github.com/naisy/Docker.git
+# follow instruction under ~/github/Docker/notebooks/donkeycar/01.build_from_clean_sdcard.ipynb
+# given here:
+
+# 1 Setup
+
+# Download docker run script
+mkdir ~/github
+cd ~/github
+git clone https://github.com/naisy/Docker
+
+# docker stuff
+sudo apt-get install -y docker-compose 
+sudo groupadd docker
+sudo usermod -aG docker $USER
+docker run hello-world
+
+# increase swap space to 6GB
+cd ~/projects; git clone https://github.com/JetsonHacksNano/resizeSwapMemory.git
+cd resizeSwapMemory
+./setSwapMemorySize.sh -g 6
+
+### in docker: sudo apt-get install xclip
+
+# Launch docker (if not already running)
+cd ~/github/Docker
+./run-jetson-jp461-donkeycar.sh
+
+# disable restart https://stackoverflow.com/questions/37599128/docker-how-do-you-disable-auto-restart-on-a-container
+# docker update --restart=no my-container
+
+# check container id
+docker ps -a
+
+# login to docker container
+docker exec -it CONTAINER_ID /bin/bash
+
+# Create mycar (if not done yet)
+donkey createcar --path=~/data/mycar
+
+# 2 Run
+
+# run car
+(python3.6.9) jetson@docker-donkeycar-donkeynano462
+cd ~/data/mycar
+python manage.py drive
+
+# 3 Tests
+- [x] donkey
+- [ ] donkey ui (ui running, but see 02-errors.log!)
+- [x] python manage.py drive (cameras csi & usb)

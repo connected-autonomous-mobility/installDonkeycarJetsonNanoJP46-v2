@@ -1,22 +1,31 @@
-# installDonkeycarJetsonNanoJP46-v2
-- instruction for installation of donkeycar.com on a Jetson Nano running JP 4.6 
-- version 2, Oct. 8th 2022
-- SD card image n8, 32GB (internal use only, just ignore)
-- using [Ed's install script](https://github.com/autorope/donkeycar/tree/990-jetson-nano-install-script)
-- see the [logs](logs) for details of the input, output, errors of the trials 
+# Install donkeycar on Jetson Nano
+*SD card image n9, 128GB (internal use only, just ignore)*
 
-## JP 4.6 Software versions
-- virtualenv 20.14.1?
-- python 3.6.9
+
+
+## 1 SD card image [JetPack 4.6.2](https://developer.nvidia.com/embedded/jetpack-sdk-462)
+![](media/jetson462-jtop.png)
+- python 3.6.9 (objective: 3.7)
 - OpenCV 4.1.1
-
-## Desired Software versions
-- python 3.7 
+- CUDA 10.2.300
+- TensorRT 8.2.1.8
+- cuDNN 8.2.1.32
 - tensorflow >=2.2.0 (see TCIII list](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform-release-notes/tf-jetson-rel.html)
 
-## Checks
-- [x] installation incl. Ed's script without errors
-- [ ] CSI camera
-- [ ] usb camera
-- [ ] donkey drive & train
-- [ ] run prepared [models trained w/ tf 2.2 will work by using any of the models in ](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
+## 2 Setup 
+*Actual Try: 3.2 naisy docker*
+- [installation](./03-logs_naisydocker/02-input.log), [Dockerfiles](./Dockerfiles/)
+- [logs](./03-logs_naisydocker/02-output.log)
+- python 3.6.9
+- tensorflow 2.7.0
+
+## 3 Tests
+- [x] installation
+- [x] CSI & usb camera
+- [x] donkey calibrate --channel 1/0 --bus 1
+- [ ] donkey ui, opens but shows [warning](./03-logs_naisydocker/02-error.log)
+- [x] python manage.py drive 
+- [x] python train.py  --tub=data/tub_7_22-10-15/ --model=models/jp461_m1.h5
+- [run pretrained models trained w/ tf 2.2](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
+    - [x] python manage.py drive --model=models/pilot_21-08-12_4.h5 --type=linear
+    - [x] python manage.py drive --model=models/pilot_21-08-12_9.h5 --type=categorical

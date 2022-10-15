@@ -1,10 +1,11 @@
-# Logs
+# 01-Logs46
 This directory contains the documentation of the sevaral installation trials NN:
 - NN-input.log
 - NN-output.log
 - NN-errors.log
 
 # Installation trials
+-using: [Ed's install script](https://github.com/autorope/donkeycar/tree/990-jetson-nano-install-script)
 
 ## 01 base installation, Oct. 9th 2022
 - error: tensorflow & donkey
