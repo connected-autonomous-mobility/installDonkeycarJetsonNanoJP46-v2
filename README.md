@@ -30,6 +30,12 @@
 - [x] [run pretrained models trained w/ tf 2.2](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
     - [x] python manage.py drive --model=models/pilot_21-08-12_4.h5 --type=linear
     - [x] python manage.py drive --model=models/pilot_21-08-12_9.h5 --type=categorical
+- [x] pytest: 
+    ```
+    <enter docker container>
+    pip install pytest
+    (python3.6.9) jetson@docker-donkeycar-donkeynano462:~/github/donkeycar$ pytest > out.txt
+    ```
 
 ## 4 Try yourself
 - prepare image [JetPack 4.6.2](https://developer.nvidia.com/embedded/jetpack-sdk-462)

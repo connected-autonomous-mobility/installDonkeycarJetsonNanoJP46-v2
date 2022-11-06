@@ -1,0 +1,35 @@
+============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-7.0.1, pluggy-1.0.0
+rootdir: /home/jetson/github/donkeycar
+plugins: anyio-3.6.1
+collected 97 items / 2 errors / 95 selected
+
+==================================== ERRORS ====================================
+________________ ERROR collecting donkeycar/tests/test_torch.py ________________
+ImportError while importing test module '/home/jetson/github/donkeycar/donkeycar/tests/test_torch.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.6/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+donkeycar/tests/test_torch.py:8: in <module>
+    import pytorch_lightning as pl
+E   ModuleNotFoundError: No module named 'pytorch_lightning'
+________________ ERROR collecting donkeycar/tests/test_train.py ________________
+donkeycar/tests/test_train.py:17: in <module>
+    defaults=(None, ) * 7)
+E   TypeError: namedtuple() got an unexpected keyword argument 'defaults'
+=============================== warnings summary ===============================
+donkeycar/parts/pins.py:737
+  /home/jetson/github/donkeycar/donkeycar/parts/pins.py:737: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+    logger.warn("pigpio was not imported.")
+
+../../../../virtualenv/python3/lib/python3.6/site-packages/flatbuffers/compat.py:19
+  /virtualenv/python3/lib/python3.6/site-packages/flatbuffers/compat.py:19: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+    import imp
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR donkeycar/tests/test_torch.py
+ERROR donkeycar/tests/test_train.py - TypeError: namedtuple() got an unexpect...
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+======================== 2 warnings, 2 errors in 31.33s ========================
