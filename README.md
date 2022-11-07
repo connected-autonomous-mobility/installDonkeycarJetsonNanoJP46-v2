@@ -28,7 +28,7 @@
 - [x] [run pretrained models trained w/ tf 2.2](https://github.com/autorope/donkey_datasets/tree/master/circuit_launch_20210716/models)
     - [x] python manage.py drive --model=models/pilot_21-08-12_4.h5 --type=linear
     - [x] python manage.py drive --model=models/pilot_21-08-12_9.h5 --type=categorical
-- [x] pytest: 
+- [ ] pytest > ![out.txt](https://github.com/connected-autonomous-mobility/installDonkeycarJetsonNanoJP46-v2/blob/main/out.txt)
     ```
     <enter docker container>
     pip install pytest
