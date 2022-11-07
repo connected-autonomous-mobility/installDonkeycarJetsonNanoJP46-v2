@@ -1,0 +1,189 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.17, pytest-3.3.2, py-1.5.2, pluggy-0.6.0
+rootdir: /home/rainer/projects/donkeycar, inifile:
+collected 17 items / 19 errors
+
+==================================== ERRORS ====================================
+______________ ERROR collecting donkeycar/tests/test_actuator.py _______________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/__init__.py", line 15
+E       print(f'using donkey v{__version__} ...')
+E                                              ^
+E   SyntaxError: invalid syntax
+_____________ ERROR collecting donkeycar/tests/test_catalog_v2.py ______________
+ImportError while importing test module '/home/rainer/projects/donkeycar/donkeycar/tests/test_catalog_v2.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+donkeycar/tests/test_catalog_v2.py:6: in <module>
+    from pathlib import Path
+E   ImportError: No module named pathlib
+_____________ ERROR collecting donkeycar/tests/test_controller.py ______________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/dist-packages/_pytest/assertion/rewrite.py:213: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+donkeycar/tests/test_controller.py:2: in <module>
+    from .setup import on_pi
+donkeycar/tests/setup.py:4: in <module>
+    from donkeycar.parts.tub_v2 import Tub
+E     File "/home/rainer/projects/donkeycar/donkeycar/parts/tub_v2.py", line 118
+E       f'Expected {len(self.tub.inputs)} inputs but received {len(args)}'
+E                                                                        ^
+E   SyntaxError: invalid syntax
+____________ ERROR collecting donkeycar/tests/test_datastore_v2.py _____________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/tests/test_datastore_v2.py", line 42
+E       print(f'Entry {entry}')
+E                            ^
+E   SyntaxError: invalid syntax
+_______________ ERROR collecting donkeycar/tests/test_launch.py ________________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/dist-packages/_pytest/assertion/rewrite.py:213: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+donkeycar/tests/test_launch.py:4: in <module>
+    from donkeycar import utils
+E     File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 391
+E       value:float,      # IN : value to compare
+E            ^
+E   SyntaxError: invalid syntax
+________________ ERROR collecting donkeycar/tests/test_lidar.py ________________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/tests/test_lidar.py", line 35
+E       print(f'{i}: Got {len(scan)} measurements')
+E                                                ^
+E   SyntaxError: invalid syntax
+______________ ERROR collecting donkeycar/tests/test_pipeline.py _______________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/tests/test_pipeline.py", line 12
+E       def random_records(size: int = 100) -> List[TubRecord]:
+E                              ^
+E   SyntaxError: invalid syntax
+_______________ ERROR collecting donkeycar/tests/test_robohat.py _______________
+ImportError while importing test module '/home/rainer/projects/donkeycar/donkeycar/tests/test_robohat.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+donkeycar/tests/test_robohat.py:4: in <module>
+    from unittest.mock import MagicMock
+E   ImportError: No module named mock
+_______________ ERROR collecting donkeycar/tests/test_scripts.py _______________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/dist-packages/_pytest/assertion/rewrite.py:213: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+donkeycar/tests/test_scripts.py:1: in <module>
+    from donkeycar import utils
+E     File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 391
+E       value:float,      # IN : value to compare
+E            ^
+E   SyntaxError: invalid syntax
+_____________ ERROR collecting donkeycar/tests/test_seekable_v2.py _____________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/dist-packages/_pytest/assertion/rewrite.py:213: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+donkeycar/tests/test_seekable_v2.py:5: in <module>
+    from donkeycar.parts.datastore_v2 import Seekable
+E     File "/home/rainer/projects/donkeycar/donkeycar/parts/datastore_v2.py", line 60
+E       raise RuntimeError(f'Seekable {self.file} is read-only.')
+E                                                              ^
+E   SyntaxError: invalid syntax
+______________ ERROR collecting donkeycar/tests/test_telemetry.py ______________
+ImportError while importing test module '/home/rainer/projects/donkeycar/donkeycar/tests/test_telemetry.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+donkeycar/tests/test_telemetry.py:4: in <module>
+    from unittest import mock
+E   ImportError: cannot import name mock
+______________ ERROR collecting donkeycar/tests/test_template.py _______________
+ImportError while importing test module '/home/rainer/projects/donkeycar/donkeycar/tests/test_template.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+donkeycar/tests/test_template.py:4: in <module>
+    from donkeycar.templates import complete
+E   ImportError: No module named templates
+________________ ERROR collecting donkeycar/tests/test_torch.py ________________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/tests/test_torch.py", line 19
+E       def config() -> Config:
+E                    ^
+E   SyntaxError: invalid syntax
+________________ ERROR collecting donkeycar/tests/test_train.py ________________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/tests/test_train.py", line 21
+E       def base_config() -> Config:
+E                         ^
+E   SyntaxError: invalid syntax
+_______________ ERROR collecting donkeycar/tests/test_tub_v2.py ________________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/tests/test_tub_v2.py", line 15
+E       def setUpClass(cls) -> None:
+E                           ^
+E   SyntaxError: invalid syntax
+______________ ERROR collecting donkeycar/tests/test_tubwriter.py ______________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+E     File "/home/rainer/projects/donkeycar/donkeycar/tests/test_tubwriter.py", line 28
+E       print(f'Record: {record}')
+E                               ^
+E   SyntaxError: invalid syntax
+______________ ERROR collecting donkeycar/tests/test_util_data.py ______________
+/usr/lib/python2.7/dist-packages/_pytest/python.py:403: in _importtestmodule
+    mod = self.fspath.pyimport(ensuresyspath=importmode)
+/usr/lib/python2.7/dist-packages/py/_path/local.py:668: in pyimport
+    __import__(modname)
+/usr/lib/python2.7/dist-packages/_pytest/assertion/rewrite.py:213: in load_module
+    py.builtin.exec_(co, mod.__dict__)
+donkeycar/tests/test_util_data.py:12: in <module>
+    from donkeycar.utils import *
+E     File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 391
+E       value:float,      # IN : value to compare
+E            ^
+E   SyntaxError: invalid syntax
+___________ ERROR collecting donkeycar/tests/test_web_controller.py ____________
+ImportError while importing test module '/home/rainer/projects/donkeycar/donkeycar/tests/test_web_controller.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+donkeycar/tests/test_web_controller.py:5: in <module>
+    from donkeycar.parts.web_controller.web import LocalWebController
+E   ImportError: No module named web_controller.web
+_____________ ERROR collecting donkeycar/tests/test_web_socket.py ______________
+ImportError while importing test module '/home/rainer/projects/donkeycar/donkeycar/tests/test_web_socket.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+donkeycar/tests/test_web_socket.py:2: in <module>
+    from donkeycar.parts.web_controller.web import WebSocketCalibrateAPI
+E   ImportError: No module named web_controller.web
+!!!!!!!!!!!!!!!!!!! Interrupted: 19 errors during collection !!!!!!!!!!!!!!!!!!!
+=========================== 19 error in 3.16 seconds ===========================
