@@ -46,7 +46,7 @@
 - run docker image
     ```
     cd Docker
-    ./run-jetson-jp461-donkeycar.sh*
+    ./run-jetson-jp462-donkeycar.sh*
     ```
 - identify CONTAINER_ID
     ```
